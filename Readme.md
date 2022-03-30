@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Таисия Радостева](https://up.htmlacademy.ru/adaptive/25/user/1895001).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
