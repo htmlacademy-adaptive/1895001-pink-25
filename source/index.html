@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <header class="main-header">
+      <a href="index.html" class="main-header__logo">
+        <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение «Pink».">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+
+      <h1 class="visually-hidden">Мобильное приложение «Pink» для раскрашивания серых будней в розовый цвет</h1>
+
+      <section class="intro">
+
+        <div class="intro__wrapper">
+          <p class="main-container__title">Взгляните на жизнь иначе!</p>
+          <a class="intro__download-button" href="#">Скачать приложение</a>
+          <ul class="intro__download-list">
+            <li class="intro__download-item">
+              <a class="into__dowload-link" href="#">
+                <span class="visually-hidden">IPhone</span>
+              </a>
+            </li>
+            <li class="intro__download-item">
+              <a class="into__dowload-link" href="#">
+                <span class="visually-hidden">Android</span>
+              </a>
+            </li>
+            <li class="intro__download-item">
+              <a class="into__dowload-link" href="#">
+                <span class="visually-hidden">Microsoft</span>
+              </a>
+            </li>
+          </ul>
+          <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+
+      </section>
+
+      <section class="information"></section>
+
+      <section class="reviews"></section>
+
+      <section class="contacts"></section>
+
+    </main>
+
+    <footer class=""></footer>
 
   </body>
 </html>
