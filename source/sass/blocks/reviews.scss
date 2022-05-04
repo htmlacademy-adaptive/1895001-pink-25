@@ -1,0 +1,30 @@
+@use "../global/index.scss" as *;
+
+.reviews__wrapper {
+  margin-top: 50px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-name {
+  color: $black;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  color: $darkblue;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 31px;
+  margin-bottom: 44px;
+}
+
+.reviews__toggles {
+  margin-bottom: 60px;
+}

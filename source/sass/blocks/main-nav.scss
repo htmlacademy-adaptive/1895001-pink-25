@@ -1,0 +1,19 @@
+@use "../global/index.scss" as *;
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.main-nav__link {
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
