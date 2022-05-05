@@ -1,0 +1,61 @@
+@use "../global/index.scss" as *;
+
+.gallery__wrapper {
+  padding: 54px 0 49px 0;
+}
+
+.gallery__title {
+  color: $darkblue;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.gallery__photo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__description {
+  width: 280px;
+  background-color: $lightgrey;
+  padding: 25px 0;
+}
+
+.gallery__username {
+  color: $darkblue;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__time-ago {
+  color: $darkblue;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.gallery__message-text {
+  color: $darkblue;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__like-button {
+  color: $pink;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

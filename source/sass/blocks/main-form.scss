@@ -1,0 +1,9 @@
+@use "../global/index.scss" as *;
+
+.main-form__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $darkblue;
+  margin: 55px 0;
+}

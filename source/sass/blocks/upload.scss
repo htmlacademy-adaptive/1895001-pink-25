@@ -1,0 +1,46 @@
+@use "../global/index.scss" as *;
+
+.upload__title {
+  margin: 0;
+  margin-bottom: 52px;
+  color: $darkblue;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.upload__wrapper {
+  padding: 20px 0 41px 0;
+  background-color: $lightgrey;
+}
+
+.upload__image {
+  margin-bottom: 42px;
+}
+
+.upload__settings {
+  margin: 0;
+  margin-bottom: 66px;
+  border: none;
+}
+
+.upload__send {
+  color: $pink;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  border: 3px solid $pink;
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+.upload__cancel {
+  color: rgba($darkblue, 0.1);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  border: 3px solid rgba($darkblue, 0.1);
+  border-radius: 30px;
+}
