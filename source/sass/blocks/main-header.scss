@@ -1,0 +1,11 @@
+@use "../global/index.scss" as *;
+
+.main-header {
+  background: url("../../img/back-mobile.jpg") no-repeat $blue-back;
+}
+
+.main-header__wrapper {
+  background: rgba($black, 0.3);
+  display: flex;
+  justify-content: space-between;
+}

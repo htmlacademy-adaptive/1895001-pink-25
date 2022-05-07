@@ -1,0 +1,35 @@
+@use "../global/index.scss" as *;
+
+.contacts__title {
+  color: $darkblue;
+  margin-bottom: 45px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 41px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__subtitle {
+  color: $darkblue;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contacts-text {
+  color: $pink;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}

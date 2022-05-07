@@ -3,45 +3,49 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logotype-mobile-header.svg" width="74" height="23" alt="Приложение «Pink».">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="catalog.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main-container">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logotype-mobile-header.svg" width="74" height="23" alt="Приложение «Pink».">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="intro">
 
       <div class="intro__wrapper">
-        <h2 class="main-container__title intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <h2 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
 
     </section>
+
+  </header>
+
+  <main class="main-container">
 
     <section class="main-form">
 
@@ -53,20 +57,17 @@
 
           <fieldset class="contest-form__user">
             <legend class="contest-form__legend visually-hidden">Имя участника</legend>
-            <div class="contest-form__group">
-              <label class="contest-form__label">Фамилия:
-                <input class="contest-form__input" type="text" name="surname" placeholder="Введите ваше имя *" required>
-              </label>
+            <div class="contest-form__username">
+              <label class="contest-form__label" for="surname">Фамилия:</label>
+              <input class="contest-form__input" id="surname" type="text" name="surname" placeholder="Введите ваше имя *" required>
             </div>
-            <div class="contest-form__group">
-              <label class="contest-form__label">Имя:
-                <input class="contest-form__input" type="text" name="username" placeholder="Введите ваше имя *" required>
-              </label>
+            <div class="contest-form__username">
+              <label class="contest-form__label" for="name">Имя:</label>
+              <input class="contest-form__input" id="name" type="text" name="username" placeholder="Введите ваше имя *" required>
             </div>
-            <div class="contest-form__group">
-              <label class="contest-form__label">Отчество:
-                <input class="contest-form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-              </label>
+            <div class="contest-form__username">
+              <label class="contest-form__label" for="patronymic">Отчество:</label>
+              <input class="contest-form__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
 
@@ -120,12 +121,12 @@
 
           <fieldset class="contest-form__contacts">
             <legend class="contest-form__legend visually-hidden">Контакты участника</legend>
-            <div class="contest-form__group">
+            <div class="contest-form__connect">
               <label class="contest-form__label">Номер телефона
                 <input class="contest-form__input" type="number" name="phone-number" placeholder="Номер, пожалуйста">
               </label>
             </div>
-            <div class="contest-form__group">
+            <div class="contest-form__connect">
               <label class="contest-form__label">Адрес почты
                 <input class="contest-form__input" type="email" name="email" placeholder="Введите почту *" required>
               </label>

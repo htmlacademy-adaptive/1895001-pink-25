@@ -1,0 +1,54 @@
+@use "../global/index.scss" as *;
+
+.advantages__wrapper {
+  padding-top: 46px;
+}
+
+.advantages-slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  margin-bottom: 70px;
+}
+
+.advantages__title {
+  margin: 0;
+  color: $darkblue;
+}
+
+.advantages__container-list {
+  background-color: $lightgrey;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+.advantages__item-title {
+  margin: 0;
+  margin-bottom: 24px;
+  color: $black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advantages__description {
+  margin: 0;
+  color: $darkblue;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.advantages__list-iphones {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

@@ -1,0 +1,8 @@
+@use "../global/index.scss" as *;
+
+.copyright__text {
+  color: $darkblue;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
