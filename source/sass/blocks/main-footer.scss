@@ -1,8 +1,7 @@
 @use "../global/index.scss" as *;
 
 .footer-wrapper {
-  width: 280px;
-  margin: 0 auto;
+  width: 320px;
   padding: 40px 0 40px 0;
 }
 
@@ -14,7 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .footer-wrapper {
-    width: 620px;
+    width: $tablet-width;
     padding: 36px 0;
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,7 @@
 
 @media (min-width: $desktop-width) {
   .footer-wrapper {
-    width: 940px;
+    width: $desktop-width;
     padding: 71px 0;
   }
 }

@@ -5,6 +5,7 @@
 }
 
 .main-header__wrapper {
+  width: 320px;
   background: rgba($black, 0.3);
   display: flex;
   justify-content: space-between;
@@ -15,7 +16,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    width: $tablet-width;
+  }
+
   .main-header__logo {
     height: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    width: $desktop-width;
   }
 }

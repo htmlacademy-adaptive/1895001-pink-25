@@ -1,6 +1,7 @@
 @use "../global/index.scss" as *;
 
 .intro__wrapper {
+  width: 320px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -38,6 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .intro__wrapper {
+    width: $tablet-width;
     padding: 74px 0 120px 0;
   }
 
@@ -53,6 +55,7 @@
 
 @media (min-width: $desktop-width) {
   .intro__wrapper {
+    width: $desktop-width;
     padding: 114px 0 130px 0;
   }
 }

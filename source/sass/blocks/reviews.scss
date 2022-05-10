@@ -1,6 +1,7 @@
 @use "../global/index.scss" as *;
 
 .reviews__wrapper {
+  width: 320px;
   padding-top: 50px;
   padding-bottom: 60px;
 }
@@ -38,6 +39,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    width: $tablet-width;
+  }
+
   .reviews__item {
     flex-direction: column-reverse;
     gap: 51px;
@@ -46,5 +51,11 @@
 
   .reviews__author-info {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    width: $desktop-width;
   }
 }

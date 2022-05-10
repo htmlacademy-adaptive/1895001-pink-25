@@ -1,6 +1,7 @@
 @use "../global/index.scss" as *;
 
 .price__wrapper {
+  width: 320px;
   background-color: $lightgrey;
   padding-top: 80px;
   padding-bottom: 50px;
@@ -37,6 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .price__wrapper {
+    width: $tablet-width;
     padding-top: 100px;
     padding-bottom: 70px;
   }
@@ -52,6 +54,7 @@
 
 @media (min-width: $desktop-width) {
   .price__wrapper {
+    width: $desktop-width;
     padding-top: 159px;
     padding-bottom: 98px;
   }

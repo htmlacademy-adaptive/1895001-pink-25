@@ -5,6 +5,7 @@
 }
 
 .research__wrapper {
+  width: 320px;
   padding-top: 54px;
   display: flex;
   gap: 72px;
@@ -38,14 +39,16 @@
   .research {
     display: block;
   }
+
+  .research__wrapper {
+    width: $tablet-width;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .research {
-    background-color: $lightgrey;
-  }
-
   .research__wrapper {
+    width: $desktop-width;
     padding: 17px 0 67px 0;
+    background-color: $lightgrey;
   }
 }
