@@ -9,3 +9,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.main-header__logo {
+  height: 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    height: 110px;
+  }
+}

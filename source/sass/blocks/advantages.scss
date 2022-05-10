@@ -18,6 +18,7 @@
 
 .advantages__container-list {
   background-color: $lightgrey;
+  display: flex;
 }
 
 .advantages__list {
@@ -51,4 +52,49 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+}
+
+.advantages__image--hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-slogan {
+    gap: 1px;
+    margin-bottom: 122px;
+  }
+
+  .advantages__list {
+    width: 310px;
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-slogan {
+    margin-bottom: 72px;
+  }
+
+  .advantages__container-list {
+    flex-direction: column;
+  }
+
+  .advantages__list {
+    width: 940px;
+    flex-direction: row;
+    gap: 68px;
+  }
+
+  .advantages__item {
+    width: 300px;
+  }
+
+  .advantages__list-iphones {
+    gap: 20px;
+  }
+
+  .advantages__image--hidden {
+    display: block;
+  }
 }

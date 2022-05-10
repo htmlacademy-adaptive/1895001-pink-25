@@ -1,0 +1,51 @@
+@use "../global/index.scss" as *;
+
+.research {
+  display: none;
+}
+
+.research__wrapper {
+  padding-top: 54px;
+  display: flex;
+  gap: 72px;
+}
+
+.research__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: $black;
+}
+
+.research__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkblue;
+}
+
+.research__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    background-color: $lightgrey;
+  }
+
+  .research__wrapper {
+    padding: 17px 0 67px 0;
+  }
+}

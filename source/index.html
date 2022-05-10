@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
@@ -16,20 +17,22 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
 
@@ -39,25 +42,27 @@
           <h2 class="visually-hidden">Скачайте наше приложение</h2>
           <p class="intro__title">Взгляните на жизнь иначе!</p>
           <img class="intro__image" src="img/hand.png" width="320" height="286" alt="Телефон.">
-          <a class="intro__download-button" href="#">Скачать приложение</a>
-          <ul class="intro__download-list">
-            <li class="intro__download-item">
-              <a class="intro__dowload-link" href="#">
-                <span class="visually-hidden">IPhone</span>
-              </a>
-            </li>
-            <li class="intro__download-item">
-              <a class="intro__dowload-link" href="#">
-                <span class="visually-hidden">Android</span>
-              </a>
-            </li>
-            <li class="intro__download-item">
-              <a class="intro__dowload-link" href="#">
-                <span class="visually-hidden">Microsoft</span>
-              </a>
-            </li>
-          </ul>
-          <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="intro__wrapper-description">
+            <a class="intro__download-button" href="#">Скачать приложение</a>
+            <ul class="intro__download-list">
+              <li class="intro__download-item">
+                <a class="intro__dowload-link" href="#">
+                  <span class="visually-hidden">IPhone</span>
+                </a>
+              </li>
+              <li class="intro__download-item">
+                <a class="intro__dowload-link" href="#">
+                  <span class="visually-hidden">Android</span>
+                </a>
+              </li>
+              <li class="intro__download-item">
+                <a class="intro__dowload-link" href="#">
+                  <span class="visually-hidden">Microsoft</span>
+                </a>
+              </li>
+            </ul>
+            <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
 
       </section>
@@ -91,10 +96,29 @@
               </li>
             </ul>
             <ul class="advantages__list-iphones">
+              <li class="advantages__image advantages__image--hidden">
+                <img src="img/iphone-screen1.png" width="300" height="382" alt="Телефон со смайликом.">
+              </li>
+              <li class="advantages__image advantages__image--hidden">
+                <img src="img/iphone-screen2.png" width="300" height="382" alt="Телефон со смайликом.">
+              </li>
               <li class="advantages__image">
-                <img src="img/iphone-screen.png" width="157" height="320" alt="Телефон со смайликом.">
+                <img src="img/iphone-screen3.png" width="300" height="382" alt="Телефон со смайликом.">
               </li>
             </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="research">
+
+        <div class="research__wrapper">
+          <img class="research__image" src="img/timer.png" width="238" height="276" alt="Эффект на 24 часа.">
+          <div class="research__inner">
+            <h2 class="research__title">Эффект на 24 часа!</h2>
+            <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
 
@@ -106,15 +130,24 @@
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <blockquote class="reviews__item slider__item visually-hidden">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <blockquote class="reviews__item slider__item visually-hidden">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <button class="reviews__prev visually-hidden" type="button">Предыдущий отзыв</button>
@@ -214,7 +247,7 @@
               <b class="contacts__subtitle">Пишите:</b>
               <a href="mailto:mail@htmlacademy.ru" class="contacts-text">mail@htmlacademy.ru</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--grid">
               <b class="contacts__subtitle">Приезжайте в гости:</b>
               <a href="#" class="contacts-text">ул. Большая Конюшенная, 19/8</a>
             </li>

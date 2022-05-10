@@ -1,5 +1,11 @@
 @use "../global/index.scss" as *;
 
+.intro__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .intro__title {
   color: $white;
   font-weight: 300;
@@ -28,4 +34,25 @@
   font-size: 14px;
   line-height: 24px;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    padding: 74px 0 120px 0;
+  }
+
+  .intro__wrapper-description {
+    width: 300px;
+  }
+
+  .intro__image {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    padding: 114px 0 130px 0;
+  }
 }

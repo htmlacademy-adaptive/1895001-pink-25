@@ -2,7 +2,7 @@
 
 .price__wrapper {
   background-color: $lightgrey;
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 50px;
 }
 
@@ -33,4 +33,26 @@
   color: $darkblue;
   border: 2px $darkgrey solid;
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .price__wrapper {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .price__table-option {
+    text-transform: none;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__wrapper {
+    padding-top: 159px;
+    padding-bottom: 98px;
+  }
 }

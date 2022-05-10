@@ -16,3 +16,15 @@
   color: $black;
   background-color: $white;
 }
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1200px;
+  }
+}
