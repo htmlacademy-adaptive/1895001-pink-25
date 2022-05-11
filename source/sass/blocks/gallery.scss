@@ -1,6 +1,7 @@
 @use "../global/index.scss" as *;
 
 .gallery__wrapper {
+  width: 320px;
   padding: 54px 0 49px 0;
 }
 
@@ -19,7 +20,6 @@
 }
 
 .gallery__description {
-  width: 280px;
   background-color: $lightgrey;
   padding: 25px 0;
 }
@@ -57,5 +57,47 @@
 .gallery__list {
   margin: 0;
   padding: 0;
+  padding-top: 20px;
   list-style-type: none;
+  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    width: $tablet-width;
+    padding: 100px 0 73px 0;
+  }
+
+  .gallery__description--panorama {
+    width: 620px;
+  }
+
+  .gallery__list {
+    padding-top: 50px;
+    width: 620px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    width: $desktop-width;
+    padding: 100px 0 67px 0;
+  }
+
+  .gallery__description--panorama {
+    width: 940px;
+  }
+
+  .gallery__list {
+    width: 940px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

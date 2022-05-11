@@ -1,9 +1,25 @@
 @use "../global/index.scss" as *;
 
+.main-form__wrapper {
+  width: 320px;
+}
+
 .main-form__title {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: $darkblue;
   margin: 55px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__wrapper {
+    width: $desktop-width;
+  }
 }

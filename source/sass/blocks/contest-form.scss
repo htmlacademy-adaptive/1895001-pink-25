@@ -1,10 +1,20 @@
 @use "../global/index.scss" as *;
 
-.contest-form__user {
+.contest-form__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  margin-bottom: 52px;
+}
+
+.contest-form__group {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 44px;
+
+  &--background {
+    background-color: $lightgrey;
+  }
 }
 
 .contest-form__label {
@@ -27,22 +37,16 @@
   }
 }
 
-.contest-form__group {
-  margin: 0;
-  border: none;
-  padding: 44px 0;
-
-  &--background {
-    background-color: $lightgrey;
-  }
-}
-
 .contest-form__legend {
   color: $pink;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  &--display {
+    display: none;
+  }
 }
 
 .contest-form__list {
@@ -56,12 +60,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-}
-
-.contest-form__contacts {
-  margin: 0;
-  padding: 42px 0 44px 0;
-  border: none;
 }
 
 .contest-form__radio-label {
@@ -83,6 +81,12 @@
   }
 }
 
+.contest-form__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
 .contest-form__send {
   color: $white;
   text-transform: uppercase;
@@ -94,9 +98,78 @@
 }
 
 .contest-form__note {
+  margin: 0;
   color: $darkblue;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .contest-form__inner {
+    gap: 65px;
+    margin-bottom: 70px;
+  }
+
+  .contest-form__group {
+    &--background {
+      background-color: $white;
+    }
+
+    &--border {
+      border: 2px solid $darkgrey;
+    }
+
+    &--user {
+      order: -3;
+    }
+
+    &--contacts {
+      order: -1;
+    }
+
+    &--app {
+      order: -2;
+    }
+  }
+
+  .contest-form__legend--display {
+    display: block;
+  }
+
+  .contest-form__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-form__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px 74px;
+  }
+
+  .contest-form__group {
+    &--contacts {
+      grid-column: -1 / 1;
+      display: flex;
+      gap: 74px;
+    }
+
+    &--achievements {
+      grid-column: -1 / 1;
+    }
+
+    &--emotions {
+      grid-column: -1 / 1;
+    }
+  }
+
+  .contest-form__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
