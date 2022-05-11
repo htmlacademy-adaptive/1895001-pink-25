@@ -46,9 +46,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .research {
+    background-color: $lightgrey;
+  }
+
   .research__wrapper {
     width: $desktop-width;
     padding: 17px 0 67px 0;
-    background-color: $lightgrey;
   }
 }

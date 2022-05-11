@@ -1,8 +1,11 @@
 @use "../global/index.scss" as *;
 
+.price {
+  background-color: $lightgrey;
+}
+
 .price__wrapper {
   width: 320px;
-  background-color: $lightgrey;
   padding-top: 80px;
   padding-bottom: 50px;
 }

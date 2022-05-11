@@ -1,5 +1,9 @@
 @use "../global/index.scss" as *;
 
+.advantages {
+  background-color: $lightgrey;
+}
+
 .advantages__wrapper {
   width: 320px;
   padding-top: 46px;
@@ -18,7 +22,6 @@
 }
 
 .advantages__container-list {
-  background-color: $lightgrey;
   display: flex;
   flex-direction: column;
 }
