@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .intro__title {
@@ -44,15 +45,28 @@
   .intro__wrapper {
     width: $tablet-width;
     padding: 74px 0 120px 0;
+
+    &--index {
+      padding: 0 20px;
+    }
+
+    &--index .intro__title {
+      width: 300px;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
   }
 
   .intro__wrapper-description {
     width: 300px;
+    z-index: 1;
+    text-align: center;
   }
 
   .intro__image {
     position: absolute;
-    right: 0;
+    right: 0px;
+    z-index: 0;
   }
 }
 
@@ -60,5 +74,9 @@
   .intro__wrapper {
     width: $desktop-width;
     padding: 114px 0 130px 0;
+
+    &--index {
+      padding: 0 130px;
+    }
   }
 }
