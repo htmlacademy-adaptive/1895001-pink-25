@@ -2,16 +2,18 @@
 
 .reviews__wrapper {
   width: 320px;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding: 50px 20px 60px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .reviews__item {
   margin: 0;
+  margin-bottom: 44px;
   display: flex;
   flex-direction: column;
   gap: 31px;
-  margin-bottom: 44px;
+  text-align: center;
 }
 
 .reviews__author-name {
@@ -38,9 +40,14 @@
   margin: 0;
 }
 
+.reviews__toggles {
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
     width: $tablet-width;
+    padding: 109px 20px 0 20px;
   }
 
   .reviews__item {
@@ -57,5 +64,6 @@
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
     width: $desktop-width;
+    padding: 72px 130px 41px 130px;
   }
 }

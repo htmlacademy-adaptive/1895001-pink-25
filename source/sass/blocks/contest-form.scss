@@ -17,6 +17,31 @@
   }
 }
 
+.contest-form__username {
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 22px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__connect {
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 22px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__feedback {
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 22px;
+  box-sizing: border-box;
+}
+
 .contest-form__label {
   color: $pink;
   text-transform: uppercase;
@@ -43,6 +68,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  width: 320px;
+  padding: 0 22px;
+  box-sizing: border-box;
+  text-align: center;
 
   &--display {
     display: none;
@@ -50,9 +79,11 @@
 }
 
 .contest-form__list {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 22px;
   list-style-type: none;
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .contest-form__checkbox-label {
@@ -85,6 +116,11 @@
   display: flex;
   flex-direction: column;
   gap: 46px;
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 22px;
+  text-align: center;
 }
 
 .contest-form__send {
@@ -109,7 +145,31 @@
 @media (min-width: $tablet-width) {
   .contest-form__inner {
     gap: 65px;
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
+    width: $tablet-width;
+    box-sizing: border-box;
+    padding: 0 22px;
+  }
+
+  .contest-form__username {
+    flex-direction: row;
+    width: 618px;
+    padding: 0;
+  }
+
+  .contest-form__feedback {
+    width: 616px;
+    padding: 0 60px;
+  }
+
+  .contest-form__connect {
+    width: 616px;
+    padding: 0 60px;
+  }
+
+  .contest-form__list {
+    width: 616px;
+    padding: 0 60px;
   }
 
   .contest-form__group {
@@ -142,20 +202,24 @@
     flex-direction: row;
     justify-content: space-between;
     gap: normal;
+    width: $tablet-width;
+    padding: 0 19px 0 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contest-form__inner {
-    display: grid;
+    // display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 64px 74px;
+    width: $desktop-width;
+    padding: 0 130px;
   }
 
   .contest-form__group {
     &--contacts {
       grid-column: -1 / 1;
-      display: flex;
+      // display: flex;
       gap: 74px;
     }
 
@@ -168,8 +232,27 @@
     }
   }
 
-  .contest-form__list {
+  .contest-form__username {
+    width: 433px;
+  }
+
+  .contest-form__feedback {
+    width: $tablet-width;
+    padding: 0 60px;
+  }
+
+  .contest-form__connect {
+    width: 936px;
+    padding: 0 60px;
+  }
+
+  .contest-form__list--grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contest-form__buttons {
+    width: $desktop-width;
+    padding: 0 130px;
   }
 }

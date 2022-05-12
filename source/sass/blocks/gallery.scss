@@ -3,7 +3,8 @@
 .gallery__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 54px 0 49px 0;
+  padding: 54px 20px 49px 20px;
+  box-sizing: border-box;
 }
 
 .gallery__title {
@@ -63,11 +64,9 @@
 }
 
 .gallery__list {
-  margin: 0;
-  padding: 0 20px;
-  padding-top: 20px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
   list-style-type: none;
-  width: 280px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;

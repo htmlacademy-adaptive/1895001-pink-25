@@ -12,30 +12,32 @@
 
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logotype-mobile-header.svg" width="74" height="23" alt="Приложение «Pink».">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="main-header__inner">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="img/logotype-mobile-header.svg" width="74" height="23" alt="Приложение «Pink».">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
 
     <section class="intro">
@@ -77,7 +79,7 @@
 
             <fieldset class="contest-form__group contest-form__group--background contest-form__group--border contest-form__group--achievements">
               <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="contest-form__list">
+              <ul class="contest-form__list contest-form__list--grid">
                 <li class="contest-form__item">
                   <label class="contest-form__checkbox">
                     <input class="visually-hidden contest-form__checkbox-input" type="checkbox" name="achievement-shark" checked>
@@ -126,14 +128,12 @@
             <fieldset class="contest-form__group contest-form__group--border contest-form__group--contacts">
               <legend class="contest-form__legend contest-form__legend--display">Контактная информация</legend>
               <div class="contest-form__connect">
-                <label class="contest-form__label">Номер телефона
-                  <input class="contest-form__input" type="number" name="phone-number" placeholder="Номер, пожалуйста">
-                </label>
+                <label class="contest-form__label" for="phone-number">Номер телефона</label>
+                <input class="contest-form__input" id="phone-number" type="number" name="phone-number" placeholder="Номер, пожалуйста">
               </div>
               <div class="contest-form__connect">
-                <label class="contest-form__label">Адрес почты
-                  <input class="contest-form__input" type="email" name="email" placeholder="Введите почту *" required>
-                </label>
+                <label class="contest-form__label" for="email">Адрес почты</label>
+                <input class="contest-form__input" id="email" type="email" name="email" placeholder="Введите почту *" required>
               </div>
             </fieldset>
 
@@ -166,9 +166,10 @@
 
             <fieldset class="contest-form__group contest-form__group--border contest-form__group--emotions">
               <legend class="contest-form__legend">Опишите свои эмоции</legend>
-              <label class="contest-form__label">
-                <textarea class="contest-form__textarea" name="user-experience" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              </label>
+              <div class="contest-form__feedback">
+                <label class="contest-form__label" for="user-experience"></label>
+                <textarea class="contest-form__textarea" id="user-experience" name="user-experience" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
             </fieldset>
           </div>
 

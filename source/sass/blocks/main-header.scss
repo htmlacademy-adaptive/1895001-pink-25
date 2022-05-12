@@ -5,11 +5,15 @@
 }
 
 .main-header__wrapper {
+  background: rgba($black, 0.3);
+}
+
+.main-header__inner {
   width: 320px;
   margin: 0 auto;
-  background: rgba($black, 0.3);
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .main-header__logo {
@@ -17,8 +21,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-header__wrapper {
-    width: $tablet-width;
+  .main-header__inner {
+    min-width: $tablet-width;
   }
 
   .main-header__logo {
@@ -27,7 +31,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header__wrapper {
-    width: $desktop-width;
+  .main-header__inner {
+    min-width: $desktop-width;
   }
 }

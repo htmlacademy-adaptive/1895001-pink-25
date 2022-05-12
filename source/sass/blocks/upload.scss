@@ -15,7 +15,7 @@
 
 .upload__title {
   margin: 0;
-  padding-bottom: 52px;
+  padding: 0 20px 52px 20px;
   background-color: $white;
   color: $darkblue;
   font-weight: 400;
@@ -68,7 +68,7 @@
 
 @media (min-width: $tablet-width) {
   .upload__wrapper {
-    width: 620px;
+    width: $tablet-width;
     flex-direction: row;
     gap: 47px;
     padding: 57px 20px 54px 20px;
@@ -85,11 +85,14 @@
 
 @media (min-width: $desktop-width) {
   .upload {
-    width: 940px;
+    width: $desktop-width;
     margin: 0 auto;
+    padding: 0 130px;
+    box-sizing: border-box;
   }
 
   .upload__wrapper {
+    width: 940px;
     padding: 57px 60px 57px 80px;
   }
 

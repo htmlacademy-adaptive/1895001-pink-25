@@ -8,6 +8,8 @@
   width: 320px;
   padding-top: 80px;
   padding-bottom: 50px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .price__table-title {
@@ -39,11 +41,15 @@
   background-color: $white;
 }
 
+.price__toggles {
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .price__wrapper {
     width: $tablet-width;
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding: 100px 20px 70px 20px;
+    box-sizing: border-box;
   }
 
   .price__table-option {
@@ -58,7 +64,6 @@
 @media (min-width: $desktop-width) {
   .price__wrapper {
     width: $desktop-width;
-    padding-top: 159px;
-    padding-bottom: 98px;
+    padding: 159px 130px 98px 130px;
   }
 }

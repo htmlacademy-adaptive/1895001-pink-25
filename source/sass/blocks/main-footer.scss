@@ -3,7 +3,9 @@
 .footer-wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 40px 0 40px 0;
+  padding: 40px 70px 40px 70px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .social__list {
@@ -15,7 +17,7 @@
 @media (min-width: $tablet-width) {
   .footer-wrapper {
     width: $tablet-width;
-    padding: 36px 0;
+    padding: 36px 20px 37px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +27,6 @@
 @media (min-width: $desktop-width) {
   .footer-wrapper {
     width: $desktop-width;
-    padding: 71px 0;
+    padding: 70px 130px 72px 130px;
   }
 }
