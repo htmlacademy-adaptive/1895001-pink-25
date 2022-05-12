@@ -2,6 +2,7 @@
 
 .gallery__wrapper {
   width: 320px;
+  margin: 0 auto;
   padding: 54px 0 49px 0;
 }
 
@@ -12,6 +13,8 @@
   line-height: 30px;
   margin: 0;
   margin-bottom: 60px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .gallery__photo-wrapper {
@@ -22,6 +25,11 @@
 .gallery__description {
   background-color: $lightgrey;
   padding: 25px 0;
+
+  &--panorama {
+    width: 280px;
+    align-self: center;
+  }
 }
 
 .gallery__username {
@@ -56,7 +64,7 @@
 
 .gallery__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   padding-top: 20px;
   list-style-type: none;
   width: 280px;
