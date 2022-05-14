@@ -1,10 +1,9 @@
 @use "../global/index.scss" as *;
 
 .reviews__wrapper {
-  width: 320px;
+  width: $mobile-wrapper;
   padding: 50px 20px 60px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .reviews__item {
@@ -46,7 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
-    width: $tablet-width;
+    width: $tablet-wrapper;
     padding: 109px 20px 0 20px;
   }
 
@@ -63,7 +62,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
-    width: $desktop-width;
-    padding: 72px 130px 41px 130px;
+    width: $desktop-wrapper;
+    padding: 72px 20px 41px 20px;
   }
 }

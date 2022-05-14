@@ -1,10 +1,9 @@
 @use "../global/index.scss" as *;
 
 .contacts__wrapper {
-  width: 320px;
+  width: $mobile-wrapper;
   margin: 0 auto;
   padding: 50px 20px 41px 20px;
-  box-sizing: border-box;
 }
 
 .contacts__title {
@@ -44,7 +43,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    width: $tablet-width;
+    width: $tablet-wrapper;
     padding: 55px 20px 30px 20px;
   }
 
@@ -63,8 +62,8 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
-    width: $desktop-width;
-    padding: 74px 130px 20px 130px;
+    width: $desktop-wrapper;
+    padding: 74px 20px 20px 20px;
   }
 
   .contacts__list {

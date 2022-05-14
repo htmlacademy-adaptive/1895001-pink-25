@@ -1,5 +1,11 @@
 @use "../global/index.scss" as *;
 
+.main-nav__wrapper {
+  position: absolute;
+  right: 5px;
+  // display: none;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -21,6 +27,10 @@
 @media (min-width: $desktop-width) {
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__wrapper {
+    position: static;
   }
 
   .main-nav__list {

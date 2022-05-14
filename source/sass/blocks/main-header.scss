@@ -1,19 +1,16 @@
 @use "../global/index.scss" as *;
 
 .main-header {
-  background: url("../../img/back-mobile.jpg") no-repeat $blue-back;
+  background: rgba($black, 0.3);
+  z-index: 2;
 }
 
 .main-header__wrapper {
-  background: rgba($black, 0.3);
-}
-
-.main-header__inner {
-  width: 320px;
+  width: $mobile-wrapper;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .main-header__logo {
@@ -21,8 +18,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-header__inner {
-    min-width: $tablet-width;
+  .main-header__wrapper {
+    width: $tablet-wrapper;
   }
 
   .main-header__logo {
@@ -31,8 +28,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header__inner {
-    min-width: $desktop-width;
-    padding: 0 130px;
+  .main-header__wrapper {
+    width: $desktop-wrapper;
   }
 }

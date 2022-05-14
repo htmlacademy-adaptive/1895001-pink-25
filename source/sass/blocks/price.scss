@@ -47,9 +47,8 @@
 
 @media (min-width: $tablet-width) {
   .price__wrapper {
-    width: $tablet-width;
+    width: $tablet-wrapper;
     padding: 100px 20px 70px 20px;
-    box-sizing: border-box;
   }
 
   .price__table-option {
@@ -63,7 +62,7 @@
 
 @media (min-width: $desktop-width) {
   .price__wrapper {
-    width: $desktop-width;
-    padding: 159px 130px 98px 130px;
+    width: $desktop-wrapper;
+    padding: 159px 20px 98px 20px;
   }
 }

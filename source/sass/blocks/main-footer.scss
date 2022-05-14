@@ -1,10 +1,9 @@
 @use "../global/index.scss" as *;
 
 .footer-wrapper {
-  width: 320px;
+  width: $mobile-wrapper;
   margin: 0 auto;
-  padding: 40px 70px 40px 70px;
-  box-sizing: border-box;
+  padding: 40px 20px 40px 20px;
   text-align: center;
 }
 
@@ -16,7 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .footer-wrapper {
-    width: $tablet-width;
+    width: $tablet-wrapper;
     padding: 36px 20px 37px 20px;
     display: flex;
     justify-content: space-between;
@@ -26,7 +25,7 @@
 
 @media (min-width: $desktop-width) {
   .footer-wrapper {
-    width: $desktop-width;
-    padding: 70px 130px 72px 130px;
+    width: $desktop-wrapper;
+    padding: 70px 20px 72px 20px;
   }
 }

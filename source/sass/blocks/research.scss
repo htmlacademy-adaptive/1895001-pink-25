@@ -5,7 +5,7 @@
 }
 
 .research__wrapper {
-  width: 320px;
+  width: $mobile-wrapper;
   margin: 0 auto;
   display: flex;
   gap: 72px;
@@ -41,7 +41,7 @@
   }
 
   .research__wrapper {
-    width: 620px;
+    width: $tablet-wrapper;
     padding: 54px 20px 0 20px;
   }
 }
@@ -52,7 +52,7 @@
   }
 
   .research__wrapper {
-    width: 940px;
-    padding: 17px 130px 67px 130px;
+    width: $desktop-wrapper;
+    padding: 17px 20px 67px 20px;
   }
 }
