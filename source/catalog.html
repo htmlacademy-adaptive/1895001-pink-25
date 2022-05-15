@@ -38,6 +38,10 @@
       </nav>
     </div>
 
+  </header>
+
+  <main class="main-container">
+
     <section class="intro">
 
       <div class="intro__wrapper">
@@ -46,19 +50,15 @@
 
     </section>
 
-  </header>
-
-  <main class="main-container">
-
     <section class="gallery">
 
       <div class="gallery__wrapper">
         <h1 class="visually-hidden">Делитесь своими путешествиями</h1>
         <p class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
-        <div class="gallery__photo-wrapper">
-          <img class="gallery__photo gallery__panorama" src="img/catalog/panorama-mobile.jpg" width="320" height="137" alt="Панорама дня.">
-          <div class="gallery__description">
+        <div class="gallery__photo-wrapper gallery__panorama">
+          <img class="gallery__photo" src="img/catalog/panorama-mobile.jpg" width="320" height="137" alt="Панорама дня.">
+          <div class="gallery__description gallery__description--panorama">
             <b class="gallery__username">Анна</b>
             <span class="gallery__time-ago">(5 минут назад)</span>
             <p class="gallery__message-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -124,17 +124,6 @@
           </li>
           <li class="gallery__item">
             <div class="gallery__photo-wrapper">
-              <img class="gallery__photo" src="img/catalog/photo-5-mobile.jpg" width="280" height="180" alt="На вершине горы.">
-              <div class="gallery__description">
-                <b class="gallery__username">Максим</b>
-                <span class="gallery__time-ago">(40 часов назад)</span>
-                <p class="gallery__message-text">Где снег-то?</p>
-                <p class="gallery__like-button">Нравится: 150</p>
-              </div>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <div class="gallery__photo-wrapper">
               <img class="gallery__photo" src="img/catalog/photo-6-mobile.jpg" width="280" height="180" alt="Крыло самолёта.">
               <div class="gallery__description">
                 <b class="gallery__username">Надежда</b>
@@ -153,8 +142,8 @@
       <h2 class="visually-hidden">Загрузите своё фото</h2>
       <p class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload__wrapper">
-        <form class="" action="https://echo.htmlacademy.ru/" method="post">
-          <img class="upload__image" src="img/catalog/photo-7-mobile.jpg" width="280" height="374" alt="Зимняя дорога.">
+        <img class="upload__image" src="img/catalog/photo-7-mobile.jpg" width="280" height="374" alt="Зимняя дорога.">
+        <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="upload__settings">
             <label class="upload__range visually-hidden" for="cut">Обрезка</label>
             <input class="upload__input" type="range" id="cut" name="cut" min="0" max="100" value="50" step="1">
@@ -164,8 +153,10 @@
             <input class="upload__input" type="range" id="contrast" name="contrast" min="0" max="100" value="50" step="1">
           </fieldset>
 
-          <button class="upload__send" type="submit">Запостить</button>
-          <button class="upload__cancel" type="reset">Отмена</button>
+          <div class="upload__buttons">
+            <button class="upload__send" type="submit">Запостить</button>
+            <button class="upload__cancel" type="reset">Отмена</button>
+          </div>
         </form>
       </div>
 

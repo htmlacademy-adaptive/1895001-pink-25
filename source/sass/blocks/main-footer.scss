@@ -1,8 +1,10 @@
 @use "../global/index.scss" as *;
 
 .footer-wrapper {
-  width: 320px;
-  padding: 40px 0 40px 0;
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  padding: 40px 20px 40px 20px;
+  text-align: center;
 }
 
 .social__list {
@@ -13,8 +15,8 @@
 
 @media (min-width: $tablet-width) {
   .footer-wrapper {
-    width: $tablet-width;
-    padding: 36px 0;
+    width: $tablet-wrapper;
+    padding: 36px 20px 37px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +25,7 @@
 
 @media (min-width: $desktop-width) {
   .footer-wrapper {
-    width: $desktop-width;
-    padding: 71px 0;
+    width: $desktop-wrapper;
+    padding: 70px 20px 72px 20px;
   }
 }

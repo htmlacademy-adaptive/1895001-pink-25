@@ -5,8 +5,8 @@
 }
 
 .research__wrapper {
-  width: 320px;
-  padding-top: 54px;
+  width: $mobile-wrapper;
+  margin: 0 auto;
   display: flex;
   gap: 72px;
 }
@@ -41,14 +41,18 @@
   }
 
   .research__wrapper {
-    width: $tablet-width;
+    width: $tablet-wrapper;
+    padding: 54px 20px 0 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .research__wrapper {
-    width: $desktop-width;
-    padding: 17px 0 67px 0;
+  .research {
     background-color: $lightgrey;
+  }
+
+  .research__wrapper {
+    width: $desktop-wrapper;
+    padding: 17px 20px 67px 20px;
   }
 }

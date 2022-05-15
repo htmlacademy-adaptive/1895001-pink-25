@@ -1,10 +1,24 @@
 @use "../global/index.scss" as *;
 
+.intro {
+  background: url("../../img/back-mobile.jpg") no-repeat $blue-back;
+  background-size: 320px 462px;
+  background-position: center top;
+  margin-top: -66px;
+}
+
 .intro__wrapper {
-  width: 320px;
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  padding: 102px 20px 84px 20px;
   position: relative;
   display: flex;
   flex-direction: column;
+  z-index: 0;
+
+  &--index {
+    padding: 95px 0 0 0;
+  }
 }
 
 .intro__title {
@@ -13,6 +27,9 @@
   font-size: 24px;
   line-height: 29px;
   justify-content: center;
+  padding: 0 20px;
+  margin: 0 auto 23px;
+  text-align: center;
 }
 
 .intro__download-button {
@@ -30,6 +47,11 @@
   list-style-type: none;
 }
 
+.intro__wrapper-description {
+  text-align: center;
+  padding: 28px 0 38px 0;
+}
+
 .intro__description {
   font-weight: 300;
   font-size: 14px;
@@ -38,24 +60,56 @@
 }
 
 @media (min-width: $tablet-width) {
+  .intro {
+    margin-top: -110px;
+  }
+
   .intro__wrapper {
-    width: $tablet-width;
-    padding: 74px 0 120px 0;
+    width: $tablet-wrapper;
+    padding: 191px 20px 143px 20px;
+
+    &--index {
+      padding: 184px 20px 0 20px;
+    }
+
+    &--form {
+      padding: 191px 20px 74px 20px;
+    }
+
+    &--index .intro__title {
+      width: 300px;
+      padding: 0 20px;
+      margin: 0 0 39px 0;
+      box-sizing: border-box;
+    }
   }
 
   .intro__wrapper-description {
     width: 300px;
+    z-index: 2;
+    padding: 0;
+    margin-bottom: 119px;
   }
 
   .intro__image {
     position: absolute;
     right: 0;
+    bottom: 0;
+    z-index: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro__wrapper {
-    width: $desktop-width;
-    padding: 114px 0 130px 0;
+    width: $desktop-wrapper;
+    padding: 184px 20px 104px 20px;
+
+    &--index {
+      padding: 208px 20px 0 20px;
+    }
+  }
+
+  .intro__wrapper-description {
+    margin-bottom: 130px;
   }
 }

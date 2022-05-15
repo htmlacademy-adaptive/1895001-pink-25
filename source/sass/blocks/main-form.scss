@@ -1,9 +1,41 @@
 @use "../global/index.scss" as *;
 
+.main-form__wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
 .main-form__title {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: $darkblue;
-  margin: 55px 0;
+  margin: 55px auto;
+  padding: 0 22px;
+  width: $mobile-wrapper;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__wrapper {
+    min-width: $tablet-wrapper;
+  }
+
+  .main-form__title {
+    width: $tablet-wrapper;
+    margin: 55px auto;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__wrapper {
+    min-width: $desktop-width;
+  }
+
+  .main-form__title {
+    width: $desktop-wrapper;
+    margin: 100px auto 82px auto;
+    padding: 0 20px;
+  }
 }

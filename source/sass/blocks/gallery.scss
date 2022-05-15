@@ -1,7 +1,9 @@
 @use "../global/index.scss" as *;
 
 .gallery__wrapper {
-  padding: 54px 0 49px 0;
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  padding: 54px 20px 49px 20px;
 }
 
 .gallery__title {
@@ -11,6 +13,7 @@
   line-height: 30px;
   margin: 0;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .gallery__photo-wrapper {
@@ -19,9 +22,13 @@
 }
 
 .gallery__description {
-  width: 280px;
   background-color: $lightgrey;
   padding: 25px 0;
+
+  &--panorama {
+    width: 280px;
+    align-self: center;
+  }
 }
 
 .gallery__username {
@@ -55,7 +62,47 @@
 }
 
 .gallery__list {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    width: $tablet-wrapper;
+    padding: 100px 20px 73px 20px;
+  }
+
+  .gallery__description--panorama {
+    width: $tablet-wrapper;
+  }
+
+  .gallery__list {
+    padding-top: 50px;
+    width: $tablet-wrapper;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    width: $desktop-wrapper;
+    padding: 100px 20px 67px 20px;
+  }
+
+  .gallery__description--panorama {
+    width: $desktop-wrapper;
+  }
+
+  .gallery__list {
+    width: $desktop-wrapper;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
