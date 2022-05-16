@@ -1,9 +1,108 @@
 @use "../global/index.scss" as *;
 
+.main-nav {
+  position: relative;
+  width: auto;
+  background-color: $darkblue;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 0;
+  z-index: 3;
+  display: block;
+  width: 50px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $white;
+  border-radius: 1px;
+  box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: $pink;
+  box-shadow:
+    0 10px 0 0 $pink,
+    0 20px 0 0 $pink;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba($pink, 0.3);
+  box-shadow:
+    0 10px 0 0 rgba($pink, 0.3),
+    0 20px 0 0 rgba($pink, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 23px;
+  right: -20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($pink, 0.3);
+  }
+}
+
+.main-nav--closed .main-nav__item {
+  display: none;
+}
+
 .main-nav__wrapper {
   position: absolute;
-  right: 5px;
-  // display: none;
+  top: 66px;
+  right: -20px;
+  margin: 0 auto;
+  width: 320px;
+  z-index: 10;
+}
+
+.main-nav--opened .main-nav__wrapper::before {
+  content: "";
+  position: relative;
+  top: -70px;
+  left: 0;
+  z-index: 3;
+  width: auto;
+  height: 69px;
+  background-color: $darkblue;
+  box-shadow: 0 1px 0 $black;
 }
 
 .main-nav__list {
@@ -17,11 +116,20 @@
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
+  min-height: 63px;
 }
 
 .main-nav__link {
   color: $white;
   text-decoration: none;
+  display: block;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $darkblue;
+  box-shadow:
+    0 1px 0 $black,
+    inset 0 1px 0 rgba($white, 0.15);
 }
 
 @media (min-width: $desktop-width) {
