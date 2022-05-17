@@ -9,6 +9,7 @@
   margin: 0 auto;
   display: flex;
   gap: 72px;
+  align-items: center;
 }
 
 .research__title {
@@ -22,6 +23,7 @@
 
 .research__description {
   margin: 0;
+  margin-bottom: 24px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -54,5 +56,21 @@
   .research__wrapper {
     width: $desktop-wrapper;
     padding: 17px 20px 67px 20px;
+  }
+
+  .research__title {
+    line-height: 30px;
+    margin-bottom: 37px;
+  }
+
+  .research__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 47px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

@@ -1,8 +1,21 @@
 @use "../global/index.scss" as *;
 
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .copyright__text {
   color: $darkblue;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
 }
