@@ -2,7 +2,7 @@
 
 .reviews__wrapper {
   width: $mobile-wrapper;
-  padding: 50px 20px 60px;
+  padding: 50px 20px 16px;
   margin: 0 auto;
 }
 
@@ -55,8 +55,17 @@
     margin-bottom: 49px;
   }
 
+  .reviews__author-name {
+    font-size: 20px;
+  }
+
   .reviews__author-info {
+    margin: 0;
     display: block;
+  }
+
+  .reviews__text {
+    font-size: 18px;
   }
 }
 
@@ -64,5 +73,13 @@
   .reviews__wrapper {
     width: $desktop-wrapper;
     padding: 72px 20px 41px 20px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
   }
 }

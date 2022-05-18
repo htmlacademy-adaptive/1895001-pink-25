@@ -7,8 +7,11 @@
   margin-top: -66px;
 }
 
+.intro__image {
+  margin: 0 auto;
+}
+
 .intro__wrapper {
-  width: $mobile-wrapper;
   margin: 0 auto;
   padding: 102px 20px 84px 20px;
   position: relative;
@@ -22,6 +25,7 @@
 }
 
 .intro__title {
+  width: 280px;
   color: $white;
   font-weight: 300;
   font-size: 24px;
@@ -39,17 +43,51 @@
   text-align: center;
   color: $white;
   text-decoration: none;
+  display: block;
+  border: 3px solid $white;
+  border-radius: 29px;
+  padding: 16px 0;
 }
 
 .intro__download-list {
-  margin: 53px 0 28px 0;
+  margin: 32px 0 28px 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__download-link {
+  display: block;
+
+  &--iphone {
+    width: 47px;
+    height: 56px;
+    background: url("../../img/apple-logo.png") no-repeat center;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url("../../img/android-logo.png") no-repeat center;
+  }
+
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background: url("../../img/microsoft-logo.png") no-repeat center;
+  }
 }
 
 .intro__wrapper-description {
   text-align: center;
-  padding: 28px 0 38px 0;
+  padding: 28px 20px 38px 20px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .intro__description {
@@ -57,6 +95,8 @@
   font-size: 14px;
   line-height: 24px;
   color: $white;
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,7 +109,7 @@
     padding: 191px 20px 143px 20px;
 
     &--index {
-      padding: 184px 20px 0 20px;
+      padding: 184px 20px 119px 20px;
     }
 
     &--form {
@@ -81,6 +121,8 @@
       padding: 0 20px;
       margin: 0 0 39px 0;
       box-sizing: border-box;
+      font-size: 40px;
+      line-height: 48px;
     }
   }
 
@@ -88,7 +130,11 @@
     width: 300px;
     z-index: 2;
     padding: 0;
-    margin-bottom: 119px;
+    margin: 0;
+  }
+
+  .intro__download-list {
+    margin: 46px 0 38px 0;
   }
 
   .intro__image {
@@ -96,6 +142,10 @@
     right: 0;
     bottom: 0;
     z-index: 1;
+  }
+
+  .intro__description {
+    font-size: 18px;
   }
 }
 
@@ -105,8 +155,21 @@
     padding: 184px 20px 104px 20px;
 
     &--index {
-      padding: 208px 20px 0 20px;
+      padding: 208px 20px 130px 20px;
     }
+
+    &--index .intro__title {
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
+
+  .intro__download-button {
+    font-size: 21px;
+  }
+
+  .intro__download-list {
+    margin: 67px 0 58px 0;
   }
 
   .intro__wrapper-description {

@@ -2,6 +2,19 @@
 
 .price {
   background-color: $lightgrey;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 43px;
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 60%, 0 100%);
+    z-index: 0;
+  }
 }
 
 .price__wrapper {
@@ -10,10 +23,18 @@
   padding-bottom: 50px;
   overflow: hidden;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.price__list {
+  display: block;
+  width: 832px;
+  margin-left: -256px;
+  border-collapse: collapse;
 }
 
 .price__table-title {
-  background: $darkblue;
   color: $white;
   text-transform: uppercase;
 }
@@ -22,13 +43,25 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  border: 2px $darkblue solid;
+  border: 2px $darkgrey solid;
+  border-bottom: none;
+  background: $darkblue;
+  width: 276px;
+  padding: 19px 0 35px 0;
+
+  &--empty {
+    display: none;
+    border: none;
+    background: transparent;
+  }
 }
 
 .price__table-price {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
+  margin-top: 15px;
 }
 
 .price__table-option {
@@ -39,6 +72,23 @@
   color: $darkblue;
   border: 2px $darkgrey solid;
   background-color: $white;
+  padding: 19px 17px 19px 20px;
+
+  &--name {
+    display: none;
+  }
+
+  &--true {
+    background: url("../../img/yes.png") $white no-repeat center right 17px;
+    width: 31px;
+    height: 21px;
+  }
+
+  &--false {
+    background: url("../../img/no.png") $white no-repeat center right 19px;
+    width: 27px;
+    height: 27px;
+  }
 }
 
 .price__toggles {
@@ -51,8 +101,41 @@
     padding: 100px 20px 70px 20px;
   }
 
+  .price__list {
+    width: $tablet-wrapper;
+    margin: 0;
+  }
+
+  .price__table-tariff {
+    padding: 19px 0 16px 0;
+    max-width: 152px;
+
+    &--empty {
+      display: table-cell;
+    }
+  }
+
   .price__table-option {
     text-transform: none;
+    max-width: 152px;
+
+    &--name {
+      display: table-cell;
+      padding-left: 15px;
+      border: 2px $darkgrey solid;
+    }
+
+    &--true {
+      background-position: center;
+    }
+
+    &--false {
+      background-position: center;
+    }
+  }
+
+  .price__table-option-name {
+    display: none;
   }
 
   .price__toggles {
@@ -64,5 +147,26 @@
   .price__wrapper {
     width: $desktop-wrapper;
     padding: 159px 20px 98px 20px;
+  }
+
+  .price__list {
+    width: $desktop-wrapper;
+  }
+
+  .price__table-tariff {
+    max-width: 233px;
+    font-size: 18px;
+  }
+
+  .price__table-price {
+    font-size: 24px;
+  }
+
+  .price__table-option {
+    max-width: 233px;
+
+    &--name {
+      font-size: 18px;
+    }
   }
 }

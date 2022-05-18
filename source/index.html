@@ -13,13 +13,13 @@
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/logotype-mobile-header.svg" width="74" height="23" alt="Приложение «Pink».">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
@@ -49,20 +49,20 @@
           <p class="intro__title">Взгляните на жизнь иначе!</p>
           <img class="intro__image" src="img/hand.png" width="320" height="286" alt="Телефон.">
           <div class="intro__wrapper-description">
-            <a class="intro__download-button" href="#">Скачать приложение</a>
+            <a class="intro__download-button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <ul class="intro__download-list">
               <li class="intro__download-item">
-                <a class="intro__dowload-link" href="#">
+                <a class="intro__download-link intro__download-link--iphone" href="https://www.apple.com/ru/app-store/">
                   <span class="visually-hidden">IPhone</span>
                 </a>
               </li>
               <li class="intro__download-item">
-                <a class="intro__dowload-link" href="#">
+                <a class="intro__download-link intro__download-link--android" href="https://play.google.com/store">
                   <span class="visually-hidden">Android</span>
                 </a>
               </li>
               <li class="intro__download-item">
-                <a class="intro__dowload-link" href="#">
+                <a class="intro__download-link intro__download-link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
                   <span class="visually-hidden">Microsoft</span>
                 </a>
               </li>
@@ -79,7 +79,7 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <div class="advantages-slogan">
             <p class="main-container__title advantages__title">Устали от серости мегаполиса?</p>
-            <p class="main-container__title advantages__title">Нам есть, что вам предложить!</p>
+            <p class="main-container__title advantages__title">Нам есть, что вам <br> предложить!</p>
           </div>
           <div class="advantages__container-list">
             <ul class="advantages__list">
@@ -172,54 +172,63 @@
               <tr>
                 <th class="price__table-tariff price__table-tariff--empty"></th>
                 <th class="price__table-tariff">
-                  База
-                  <span class="price__table-price">1,99 USD</span>
+                  База <br>
+                  <p class="price__table-price">1,99 USD</p>
                 </th>
                 <th class="price__table-tariff price__table-tariff--hit">
-                  Стандарт
-                  <span class="price__table-price">3,99 USD</span>
+                  Стандарт <br>
+                  <p class="price__table-price">3,99 USD</p>
                 </th>
                 <th class="price__table-tariff">
-                  Анлим
-                  <span class="price__table-price">9,99 USD</span>
+                  Анлим <br>
+                  <p class="price__table-price">9,99 USD</p>
                 </th>
               </tr>
             </thead>
             <tbody class="price__table-options">
-              <tr>
+              <tr class="price__border">
                 <td class="price__table-option price__table-option--name">Розовый фильтр</td>
                 <td class="price__table-option price__table-option--true">
-                  <span>Да</span>
+                  <span class="price__table-option-name">Розовый фильтр</span>
+                  <span class="visually-hidden">Да</span>
                 </td>
                 <td class="price__table-option price__table-option--true">
-                  <span>Да</span>
+                  <span class="price__table-option-name">Розовый фильтр</span>
+                  <span class="visually-hidden">Да</span>
                 </td>
                 <td class="price__table-option price__table-option--true">
-                  <span>Да</span>
+                  <span class="price__table-option-name">Розовый фильтр</span>
+                  <span class="visually-hidden">Да</span>
                 </td>
               </tr>
               <tr>
                 <td class="price__table-option price__table-option--name">Смайлики</td>
                 <td class="price__table-option price__table-option--false">
-                  <span>Нет</span>
+                  <span class="price__table-option-name">Смайлики</span>
+                  <span class="visually-hidden">Нет</span>
                 </td>
                 <td class="price__table-option price__table-option--true">
-                  <span>Да</span>
+                  <span class="price__table-option-name">Смайлики</span>
+                  <span class="visually-hidden">Да</span>
                 </td>
                 <td class="price__table-option price__table-option--true">
-                  <span>Да</span>
+                  <span class="price__table-option-name">Смайлики</span>
+                  <span class="visually-hidden">Да</span>
                 </td>
               </tr>
               <tr>
                 <td class="price__table-option price__table-option--name">Комментарии</td>
                 <td class="price__table-option price__table-option--false">
-                  <span>Нет</span>
+                  <span class="price__table-option-name">Комментарии</span>
+                  <span class="visually-hidden">Нет</span>
                 </td>
                 <td class="price__table-option price__table-option--false">
-                  <span>Нет</span>
+                  <span class="price__table-option-name">Комментарии</span>
+                  <span class=" visually-hidden">Нет</span>
                 </td>
                 <td class="price__table-option price__table-option--true">
-                  <span>Да</span>
+                  <span class="price__table-option-name">Комментарии</span>
+                  <span class="visually-hidden">Да</span>
                 </td>
               </tr>
             </tbody>
@@ -240,7 +249,7 @@
           <h2 class="visually-hidden">Наши контакты</h2>
           <p class="main-container__title contacts__title">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--order">
               <b class="contacts__subtitle">Звоните:</b>
               <a href="tel:+78125556666" class="contacts-text">+7 (812) 555-66-66</a>
             </li>
@@ -254,7 +263,8 @@
             </li>
           </ul>
         </div>
-        <img class="contacts__map contacts__map--mobile" src="img/map-320x200.jpg" width="320" height="200" alt="Карта офиса по адресу ул. Большая Конюшенная, 19/8.">
+        <img class="contacts__map visually-hidden" src="img/map-320x200.jpg" width="320" height="200" alt="Карта офиса по адресу ул. Большая Конюшенная, 19/8.">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1652818505541!5m2!1sru!2sru" allowfullscreen title="Карта офиса по адресу ул. Большая Конюшенная, 19/8."></iframe>
       </section>
 
     </main>
@@ -268,23 +278,33 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
+            <span class="visually-hidden">HTML Academy</span>
+            <img class="copyright__icon" src="img/htmlacademy.svg" alt="Логотип HTML Academy.">
+          </a>
         </div>
       </div>
 
     </footer>
 
+  <script src="./js/script.js"></script>
   </body>
 </html>

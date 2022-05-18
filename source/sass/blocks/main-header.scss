@@ -11,9 +11,16 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+  position: relative;
 }
 
 .main-header__logo {
+  height: 66px;
+  z-index: 2;
+}
+
+.main-header__logo-image {
+  width: 74px;
   height: 66px;
 }
 
@@ -25,10 +32,19 @@
   .main-header__logo {
     height: 110px;
   }
+
+  .main-header__logo-image {
+    width: 145px;
+    height: 110px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-header__wrapper {
     width: $desktop-wrapper;
+  }
+
+  .main-header__logo-image {
+    width: 147px;
   }
 }

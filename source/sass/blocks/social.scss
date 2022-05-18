@@ -1,0 +1,38 @@
+@use "../global/index.scss" as *;
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+}
+
+.social__item {
+  width: 54px;
+  height: 54px;
+  box-sizing: border-box;
+  border: 3px solid rgba($darkblue, 0.1);
+  border-radius: 50%;
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  &--vkontakte {
+    background: url("../../img/vkontakte.svg") no-repeat center;
+  }
+
+  &--telegram {
+    background: url("../../img/telegram.svg") no-repeat center;
+  }
+
+  &--youtube {
+    background: url("../../img/youtube.svg") no-repeat center;
+  }
+}
