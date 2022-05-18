@@ -21,23 +21,83 @@
 .contest-form__username {
   margin: 0 auto;
   width: $mobile-wrapper;
-  padding: 0 22px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
+}
+
+.contest-form__username .contest-form__input {
+  width: 100%;
+}
+
+.contest-form__username:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.contest-form__item {
+  margin-bottom: 47px;
+}
+
+.contest-form__checkbox {
+  position: relative;
+  padding-left: 60px;
+}
+
+.contest-form__checkbox-input:checked + .contest-form__checkbox-mark {
+  background: url("../../img/tick.svg") $white no-repeat center;
+}
+
+.contest-form__checkbox-mark {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: 2px solid $darkgrey;
+  border-radius: 1px;
 }
 
 .contest-form__connect-list {
   margin: 0 auto;
   width: $mobile-wrapper;
-  padding: 0 22px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  gap: 29px;
 }
 
 .contest-form__connect-item {
   display: flex;
   flex-direction: column;
+}
+
+.contest-form__radio {
+  position: relative;
+  padding-left: 90px;
+}
+
+.contest-form__radio-mark {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: 2px solid $darkgrey;
+  border-radius: 50%;
+}
+
+.contest-form__radio-input:checked + .contest-form__radio-mark::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 50%;
 }
 
 .contest-form__feedback {
@@ -46,12 +106,17 @@
   padding: 0 20px;
 }
 
+.contest-form__feedback label {
+  margin: 0;
+}
+
 .contest-form__label {
   color: $pink;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  margin-left: 23px;
 }
 
 .contest-form__input {
@@ -60,6 +125,7 @@
   font-size: 18px;
   line-height: 30px;
   border: 2px $darkgrey solid;
+  padding: 13px 20px;
 
   &::placeholder {
     color: $darkblue;
@@ -73,7 +139,7 @@
   font-size: 14px;
   line-height: 18px;
   width: $mobile-wrapper;
-  padding: 0 22px;
+  padding: 0 20px;
   text-align: center;
 
   &--display {
@@ -89,13 +155,13 @@
   }
 
   &--emotions {
-    margin: 0 auto 22px auto;
+    margin: 0 auto 20px auto;
   }
 }
 
 .contest-form__list {
   margin: 0 auto;
-  padding: 0 22px;
+  padding: 0 20px;
   list-style-type: none;
   width: $mobile-wrapper;
 }
@@ -123,6 +189,9 @@
   resize: none;
   width: 276px;
   height: 200px;
+  padding: 22px 20px;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   &::placeholder {
     color: $darkblue;
@@ -136,7 +205,7 @@
   margin: 0 auto;
   width: 320px;
   box-sizing: border-box;
-  padding: 0 22px;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -148,6 +217,10 @@
   line-height: 30px;
   background-color: $button-green;
   border: 2px solid $button-green;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 13px 0;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .contest-form__note {
@@ -164,7 +237,7 @@
     gap: 65px;
     margin: 0 auto 70px;
     width: $tablet-wrapper;
-    padding: 0 22px;
+    padding: 0 20px;
   }
 
   .contest-form__legend {
@@ -217,6 +290,16 @@
     flex-direction: row;
     width: 618px;
     padding: 0;
+    align-items: center;
+    gap: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 56px;
+    }
+  }
+
+  .contest-form__username .contest-form__label {
+    margin: 0;
   }
 
   .contest-form__feedback {
@@ -233,8 +316,16 @@
     width: 500px;
     padding: 54px 60px;
 
-    &--grid {
+    &--flex {
       padding: 54px 60px 50px 60px;
+    }
+  }
+
+  .contest-form__item {
+  margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 47px;
     }
   }
 
@@ -245,6 +336,28 @@
 
   .contest-form__connect-item {
     flex-direction: column-reverse;
+    position: relative;
+    gap: 22px;
+
+    &--phone::before {
+      content: "";
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      top: 0;
+      right: 0;
+      background: url("../../img/phone-icon.svg") $darkgrey no-repeat center;
+    }
+
+    &--mail::before {
+      content: "";
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      top: 0;
+      right: 0;
+      background: url("../../img/mail-icon.svg") $darkgrey no-repeat center;
+    }
   }
 
   .contest-form__group {
@@ -275,9 +388,14 @@
   .contest-form__buttons {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: normal;
     width: $tablet-width;
-    padding: 0 19px 0 22px;
+    padding: 0 19px 0 20px;
+  }
+
+  .contest-form__send {
+    width: 300px;
   }
 }
 
@@ -295,6 +413,7 @@
 
     &--user {
       width: 433px;
+      bottom: -10px;
     }
 
     &--app {
@@ -348,16 +467,33 @@
     width: 371px;
   }
 
+  .contest-form__radio {
+    padding-left: 59px;
+  }
+
   .contest-form__list {
     width: 200px;
     padding: 54px 60px 54px 74px;
     margin: 0;
 
-    &--grid {
+    &--flex {
       width: 817px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      flex-wrap: wrap;
       padding: 54px 59px 57px 60px;
+    }
+
+    &--flex .contest-form__item {
+      margin: 0;
+      padding-bottom: 56px;
+      width: fit-content;
+    }
+
+    &--flex .contest-form__item:nth-child(2n) {
+      padding: 0;
     }
   }
 
