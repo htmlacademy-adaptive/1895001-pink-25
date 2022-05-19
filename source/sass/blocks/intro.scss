@@ -1,14 +1,21 @@
 @use "../global/index.scss" as *;
 
 .intro {
-  background: url("../../img/back-mobile.jpg") no-repeat $blue-back;
+  background: url("../../img/intro/back-mobile.jpg") no-repeat;
+  background-color: $blue-back;
   background-size: 320px 462px;
   background-position: center top;
   margin-top: -66px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/intro/back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .intro__image {
   margin: 0 auto;
+  display: block;
 }
 
 .intro__wrapper {
@@ -110,6 +117,13 @@
 @media (min-width: $tablet-width) {
   .intro {
     margin-top: -110px;
+    background: url("../../img/intro/back-tablet.jpg") no-repeat;
+    background-position: center top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro/back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .intro__title {
@@ -164,12 +178,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    background: url("../../img/intro/back-desktop.jpg") no-repeat;
+    background-position: center top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro/back-desktop@2x.png");
+      background-size: 2560px auto;
+    }
+  }
+
   .intro__wrapper {
     width: $desktop-wrapper;
     padding: 184px 20px 104px 20px;
 
     &--index {
-      padding: 208px 20px 130px 20px;
+      padding: 208px 20px 117px 20px;
     }
 
     &--index .intro__title {
@@ -184,9 +208,5 @@
 
   .intro__download-list {
     margin: 67px 0 58px 0;
-  }
-
-  .intro__wrapper-description {
-    margin-bottom: 130px;
   }
 }

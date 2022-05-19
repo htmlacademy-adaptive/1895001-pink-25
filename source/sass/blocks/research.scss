@@ -37,25 +37,42 @@
   color: $pink;
 }
 
+.research__image {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .research {
     display: block;
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+    margin-top: -75px;
   }
 
   .research__wrapper {
     width: $tablet-wrapper;
     padding: 54px 20px 0 20px;
   }
+
+  .research__inner {
+    max-width: 310px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .research {
     background-color: $lightgrey;
+    margin: 0;
   }
 
   .research__wrapper {
     width: $desktop-wrapper;
     padding: 17px 20px 67px 20px;
+  }
+
+  .research__inner {
+    max-width: 540px;
   }
 
   .research__title {

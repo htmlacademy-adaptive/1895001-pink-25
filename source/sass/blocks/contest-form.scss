@@ -28,6 +28,7 @@
 
 .contest-form__username .contest-form__input {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .contest-form__username:not(:last-child) {

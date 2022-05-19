@@ -51,7 +51,11 @@
         <div class="intro__wrapper intro__wrapper--index">
           <h2 class="visually-hidden">Скачайте наше приложение</h2>
           <p class="intro__title intro__title--index">Взгляните на жизнь иначе!</p>
-          <img class="intro__image" src="img/hand.png" width="320" height="286" alt="Телефон.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/hands/hand-desktop.png 1x, img/hands/hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/hands/hand-tablet.png 1x, img/hands/hand-tablet@2x.png 2x">
+            <img class="intro__image" src="img/hands/hand-mobile.png" srcset="img/hands/hand-mobile@2x.png 2x" alt="Телефон.">
+          </picture>
           <div class="intro__wrapper-description">
             <a class="intro__download-button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <ul class="intro__download-list">
@@ -87,30 +91,32 @@
           </div>
           <div class="advantages__container-list">
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item--mood">
-                <p class="advantages__item-title">Поднимает настроение</p>
-                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <li class="advantages__item">
+                <img class="advantages__item-image" src="img/advantages/iphone-1.png" srcset="img/advantages/iphone-1@2x.png 2x" alt="Серые будни.">
+                <div class="advantages__text">
+                  <p class="advantages__item-title">Поднимает настроение</p>
+                  <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </div>
               </li>
-              <li class="advantages__item advantages__item--world">
-                <p class="advantages__item-title">Меняет мир вокруг</p>
-                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <li class="advantages__item">
+                <img class="advantages__item-image" src="img/advantages/iphone-2.png" srcset="img/advantages/iphone-2@2x.png 2x" alt="Розовый цвет.">
+                <div class="advantages__text">
+                  <p class="advantages__item-title">Меняет мир вокруг</p>
+                  <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </div>
               </li>
-              <li class="advantages__item advantages__item--friends">
-                <p class="advantages__item-title">Заводит новых друзей</p>
-                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </li>
-            </ul>
-            <ul class="advantages__list-iphones">
-              <li class="advantages__image advantages__image--hidden">
-                <img src="img/iphone-screen1.png" width="300" height="382" alt="Телефон со смайликом.">
-              </li>
-              <li class="advantages__image advantages__image--hidden">
-                <img src="img/iphone-screen2.png" width="300" height="382" alt="Телефон со смайликом.">
-              </li>
-              <li class="advantages__image">
-                <img src="img/iphone-screen3.png" width="300" height="382" alt="Телефон со смайликом.">
+              <li class="advantages__item">
+                <img class="advantages__item-image" src="img/advantages/iphone-3.png" srcset="img/advantages/iphone-3@2x.png 2x" alt="Телефон со смайликом.">
+                <div class="advantages__text">
+                  <p class="advantages__item-title">Заводит новых друзей</p>
+                  <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </div>
               </li>
             </ul>
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/advantages/iphone-tablet.png 1x, img/advantages/iphone-tablet@2x.png 2x">
+              <img class="advantages__image" src="img/advantages/iphone-mobile.png" srcset="img/advantages/iphone-mobile@2x.png 2x" alt="Телефон со смайликом.">
+            </picture>
           </div>
         </div>
 
@@ -119,7 +125,10 @@
       <section class="research">
 
         <div class="research__wrapper">
-          <img class="research__image" src="img/timer.png" width="238" height="276" alt="Эффект на 24 часа.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/timer-desktop.png 1x, img/timer-desktop@2x.png 2x">
+            <img class="research__image" src="img/timer-tablet.png" srcset="img/timer-tablet@2x.png 2x" alt="Эффект на 24 часа.">
+          </picture>
           <div class="research__inner">
             <h2 class="research__title">Эффект на 24 часа!</h2>
             <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
