@@ -1,19 +1,23 @@
 @use "../global/index.scss" as *;
 
 .gallery__wrapper {
-  width: $mobile-wrapper;
   margin: 0 auto;
-  padding: 54px 20px 49px 20px;
+  padding: 54px 0 49px 0;
 }
 
 .gallery__title {
+  width: $mobile-wrapper;
+  margin: 0 auto;
   color: $darkblue;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  margin: 0;
   margin-bottom: 60px;
   text-align: center;
+}
+
+.gallery__panorama .gallery__photo {
+  margin: 0 auto;
 }
 
 .gallery__photo-wrapper {
@@ -23,7 +27,8 @@
 
 .gallery__description {
   background-color: $lightgrey;
-  padding: 25px 0;
+  padding: 25px 10px 25px 17px;
+  box-sizing: border-box;
 
   &--panorama {
     width: 280px;
@@ -51,6 +56,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .gallery__like-button {
@@ -59,9 +66,11 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
+  margin: 0;
 }
 
 .gallery__list {
+  width: $mobile-wrapper;
   margin: 0 auto;
   padding: 20px 0 0 0;
   list-style-type: none;
@@ -72,12 +81,22 @@
 
 @media (min-width: $tablet-width) {
   .gallery__wrapper {
-    width: $tablet-wrapper;
     padding: 100px 20px 73px 20px;
   }
 
-  .gallery__description--panorama {
+  .gallery__title {
     width: $tablet-wrapper;
+    font-size: 18px;
+    margin-bottom: 85px;
+  }
+
+  .gallery__description {
+    min-height: 155px;
+
+    &--panorama {
+      min-height: 121px;
+      width: $tablet-wrapper;
+    }
   }
 
   .gallery__list {
@@ -93,7 +112,6 @@
 
 @media (min-width: $desktop-width) {
   .gallery__wrapper {
-    width: $desktop-wrapper;
     padding: 100px 20px 67px 20px;
   }
 

@@ -22,6 +22,10 @@
   &--index {
     padding: 95px 0 0 0;
   }
+
+  &--form {
+    padding: 102px 20px 51px 20px;
+  }
 }
 
 .intro__title {
@@ -29,11 +33,15 @@
   color: $white;
   font-weight: 300;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 33px;
   justify-content: center;
-  padding: 0 20px;
-  margin: 0 auto 23px;
+  margin: 0 auto;
   text-align: center;
+
+  &--index {
+    line-height: 29px;
+    margin-bottom: 23px;
+  }
 }
 
 .intro__download-button {
@@ -102,6 +110,12 @@
 @media (min-width: $tablet-width) {
   .intro {
     margin-top: -110px;
+  }
+
+  .intro__title {
+    width: $tablet-wrapper;
+    font-size: 50px;
+    line-height: 68px;
   }
 
   .intro__wrapper {
