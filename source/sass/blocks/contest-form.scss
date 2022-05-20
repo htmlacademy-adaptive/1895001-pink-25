@@ -233,6 +233,14 @@
   line-height: 30px;
 }
 
+.contest-form__accent {
+  color: $pink;
+}
+
+.contest-form__hidden-part {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .contest-form__inner {
     gap: 65px;
@@ -496,6 +504,10 @@
     &--flex .contest-form__item:nth-child(2n) {
       padding: 0;
     }
+  }
+
+  .contest-form__hidden-part {
+    display: inline;
   }
 
   .contest-form__buttons {
