@@ -30,6 +30,7 @@
   display: block;
   width: 832px;
   margin-left: -256px;
+  margin-bottom: 45px;
   border-collapse: collapse;
 }
 
@@ -46,12 +47,34 @@
   border-bottom: none;
   background: $darkblue;
   width: 276px;
+  max-height: 94px;
   padding: 19px 0 35px 0;
 
   &--empty {
     display: none;
     border: none;
     background: transparent;
+  }
+
+  &--hit {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--hit::after {
+    content: "Хит";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $white;
+    background-color: $pink;
+    position: absolute;
+    top: 9px;
+    left: -27px;
+    width: 103px;
+    height: 30px;
+    transform: rotate(-45deg);
   }
 }
 
@@ -112,6 +135,14 @@
     &--empty {
       display: table-cell;
     }
+
+    &--hit::after {
+      top: 14px;
+      left: -22px;
+      width: 87px;
+      height: 19px;
+      line-height: 19px;
+    }
   }
 
   .price__table-option {
@@ -155,6 +186,14 @@
   .price__table-tariff {
     max-width: 233px;
     font-size: 18px;
+
+    &--hit::after {
+      top: 16px;
+      left: -24px;
+      width: 104px;
+      height: 24px;
+      line-height: 24px;
+    }
   }
 
   .price__table-price {
