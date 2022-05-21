@@ -14,6 +14,19 @@
   line-height: 18px;
 }
 
+.copyright__icon {
+  fill: $pink;
+
+  &:hover {
+    fill: $darkblue;
+  }
+
+  &:active {
+    fill: $darkblue;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .copyright__text {
     font-size: 18px;

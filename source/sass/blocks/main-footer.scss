@@ -11,6 +11,23 @@
   align-items: center;
 }
 
+.main-footer__logo-image {
+  fill: $darkblue;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $darkblue;
+    opacity: 0.3;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .footer-wrapper {
     width: $tablet-wrapper;
@@ -27,5 +44,15 @@
   .footer-wrapper {
     width: $desktop-wrapper;
     padding: 70px 20px 72px 20px;
+  }
+
+  .main-footer__logo-image {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

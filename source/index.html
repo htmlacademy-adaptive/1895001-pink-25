@@ -15,7 +15,15 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/logotype-mobile-header.svg" width="74" height="23" alt="Приложение «Pink».">
+          <svg class="main-header__logo-image main-header__logo-image--desktop" width="147" height="40">
+            <use xlink:href="img/sprite.svg#logo-desktop"></use>
+          </svg>
+          <svg class="main-header__logo-image main-header__logo-image--tablet" width="145" height="40">
+            <use xlink:href="img/sprite.svg#logo-tablet"></use>
+          </svg>
+          <svg class="main-header__logo-image main-header__logo-image--mobile" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -141,6 +149,12 @@
 
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
+          <button class="reviews__button reviews__button--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+            <svg class="reviews__button-image" width="22" height="41">
+              <use xlink:href="./img/sprite.svg#left-arrow"></use>
+            </svg>
+          </button>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author">
@@ -163,9 +177,13 @@
               </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <button class="reviews__prev visually-hidden" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next visually-hidden" type="button">Следующий отзыв</button>
           </div>
+          <button class="reviews__button reviews__button--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+            <svg class="reviews__button-image" width="22" height="41">
+              <use xlink:href="./img/sprite.svg#right-arrow"></use>
+            </svg>
+          </button>
           <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">
               <span class="visually-hidden">1</span>
@@ -298,7 +316,12 @@
 
       <div class="footer-wrapper">
         <a class="main-footer__logo" href="index.html">
-          <img class="main-footer__logo-image" src="img/logotype-mobile-footer.svg" width="145" height="40" alt="Приложение «Pink».">
+          <svg class="main-footer__logo-image main-footer__logo-image--desktop" width="147" height="40">
+            <use xlink:href="img/sprite.svg#logo-desktop-footer"></use>
+          </svg>
+          <svg class="main-footer__logo-image main-footer__logo-image--mobile" width="145" height="40">
+            <use xlink:href="img/sprite.svg#logo-mobile-footer"></use>
+          </svg>
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
@@ -323,7 +346,9 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
             <span class="visually-hidden">HTML Academy</span>
-            <img class="copyright__icon" src="img/htmlacademy.svg" alt="Логотип HTML Academy.">
+            <svg class="copyright__icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
