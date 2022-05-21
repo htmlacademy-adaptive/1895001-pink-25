@@ -1,5 +1,12 @@
 @use "../global/index.scss" as *;
 
+.reviews {
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+}
+
 .reviews__wrapper {
   width: $mobile-wrapper;
   padding: 50px 20px 16px;
@@ -44,6 +51,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    margin: 0;
+  }
+
   .reviews__wrapper {
     width: $tablet-wrapper;
     padding: 109px 20px 0 20px;

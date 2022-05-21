@@ -28,6 +28,7 @@
 
 .contest-form__username .contest-form__input {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .contest-form__username:not(:last-child) {
@@ -230,6 +231,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+}
+
+.contest-form__accent {
+  color: $pink;
+}
+
+.contest-form__hidden-part {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -495,6 +504,10 @@
     &--flex .contest-form__item:nth-child(2n) {
       padding: 0;
     }
+  }
+
+  .contest-form__hidden-part {
+    display: inline;
   }
 
   .contest-form__buttons {

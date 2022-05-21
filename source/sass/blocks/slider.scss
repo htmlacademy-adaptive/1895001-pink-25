@@ -4,3 +4,28 @@
   position: relative;
   overflow: hidden;
 }
+
+.slider__toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__toggle {
+  padding: 0;
+  border: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba($darkblue, 0.3);
+  cursor: pointer;
+
+  &--current {
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+    border: 3px solid $darkblue;
+  }
+}

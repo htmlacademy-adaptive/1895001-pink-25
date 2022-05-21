@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
@@ -47,7 +51,11 @@
         <div class="intro__wrapper intro__wrapper--index">
           <h2 class="visually-hidden">Скачайте наше приложение</h2>
           <p class="intro__title intro__title--index">Взгляните на жизнь иначе!</p>
-          <img class="intro__image" src="img/hand.png" width="320" height="286" alt="Телефон.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/hands/hand-desktop.png 1x, img/hands/hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/hands/hand-tablet.png 1x, img/hands/hand-tablet@2x.png 2x">
+            <img class="intro__image" src="img/hands/hand-mobile.png" srcset="img/hands/hand-mobile@2x.png 2x" alt="Телефон.">
+          </picture>
           <div class="intro__wrapper-description">
             <a class="intro__download-button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <ul class="intro__download-list">
@@ -83,30 +91,32 @@
           </div>
           <div class="advantages__container-list">
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item--mood">
-                <p class="advantages__item-title">Поднимает настроение</p>
-                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <li class="advantages__item">
+                <img class="advantages__item-image" src="img/advantages/iphone-1.png" srcset="img/advantages/iphone-1@2x.png 2x" alt="Серые будни.">
+                <div class="advantages__text">
+                  <p class="advantages__item-title">Поднимает настроение</p>
+                  <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </div>
               </li>
-              <li class="advantages__item advantages__item--world">
-                <p class="advantages__item-title">Меняет мир вокруг</p>
-                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <li class="advantages__item">
+                <img class="advantages__item-image" src="img/advantages/iphone-2.png" srcset="img/advantages/iphone-2@2x.png 2x" alt="Розовый цвет.">
+                <div class="advantages__text">
+                  <p class="advantages__item-title">Меняет мир вокруг</p>
+                  <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </div>
               </li>
-              <li class="advantages__item advantages__item--friends">
-                <p class="advantages__item-title">Заводит новых друзей</p>
-                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </li>
-            </ul>
-            <ul class="advantages__list-iphones">
-              <li class="advantages__image advantages__image--hidden">
-                <img src="img/iphone-screen1.png" width="300" height="382" alt="Телефон со смайликом.">
-              </li>
-              <li class="advantages__image advantages__image--hidden">
-                <img src="img/iphone-screen2.png" width="300" height="382" alt="Телефон со смайликом.">
-              </li>
-              <li class="advantages__image">
-                <img src="img/iphone-screen3.png" width="300" height="382" alt="Телефон со смайликом.">
+              <li class="advantages__item">
+                <img class="advantages__item-image" src="img/advantages/iphone-3.png" srcset="img/advantages/iphone-3@2x.png 2x" alt="Телефон со смайликом.">
+                <div class="advantages__text">
+                  <p class="advantages__item-title">Заводит новых друзей</p>
+                  <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </div>
               </li>
             </ul>
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/advantages/iphone-tablet.png 1x, img/advantages/iphone-tablet@2x.png 2x">
+              <img class="advantages__image" src="img/advantages/iphone-mobile.png" srcset="img/advantages/iphone-mobile@2x.png 2x" alt="Телефон со смайликом.">
+            </picture>
           </div>
         </div>
 
@@ -115,7 +125,10 @@
       <section class="research">
 
         <div class="research__wrapper">
-          <img class="research__image" src="img/timer.png" width="238" height="276" alt="Эффект на 24 часа.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/timer-desktop.png 1x, img/timer-desktop@2x.png 2x">
+            <img class="research__image" src="img/timer-tablet.png" srcset="img/timer-tablet@2x.png 2x" alt="Эффект на 24 часа.">
+          </picture>
           <div class="research__inner">
             <h2 class="research__title">Эффект на 24 часа!</h2>
             <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -154,11 +167,17 @@
             <button class="reviews__prev visually-hidden" type="button">Предыдущий отзыв</button>
             <button class="reviews__next visually-hidden" type="button">Следующий отзыв</button>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <div class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
+          </div>
         </div>
 
       </section>
@@ -234,11 +253,17 @@
             </tbody>
           </table>
 
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <div class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
+          </div>
         </div>
 
       </section>
@@ -264,7 +289,9 @@
           </ul>
         </div>
         <img class="contacts__map visually-hidden" src="img/map-320x200.jpg" width="320" height="200" alt="Карта офиса по адресу ул. Большая Конюшенная, 19/8.">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1652818505541!5m2!1sru!2sru" allowfullscreen title="Карта офиса по адресу ул. Большая Конюшенная, 19/8."></iframe>
+        <div class="contacts__map-iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1652818505541!5m2!1sru!2sru" allowfullscreen title="Карта офиса по адресу ул. Большая Конюшенная, 19/8."></iframe>
+        </div>
       </section>
 
     </main>
