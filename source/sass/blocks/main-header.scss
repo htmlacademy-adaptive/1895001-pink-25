@@ -34,7 +34,8 @@
     opacity: 0.3;
   }
 
-  &--tablet, &--desktop {
+  &--tablet,
+  &--desktop {
     display: none;
   }
 }
