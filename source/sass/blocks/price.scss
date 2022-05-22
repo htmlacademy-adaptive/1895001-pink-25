@@ -7,7 +7,7 @@
   &::before {
     content: "";
     width: 100%;
-    height: 43px;
+    height: 38px;
     background-color: $white;
     position: absolute;
     top: 0;
@@ -18,8 +18,8 @@
 }
 
 .price__wrapper {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 120px;
+  padding-bottom: 47px;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -30,7 +30,7 @@
   display: block;
   width: 832px;
   margin-left: -256px;
-  margin-bottom: 45px;
+  margin-bottom: 41px;
   border-collapse: collapse;
 }
 
@@ -48,7 +48,7 @@
   background: $darkblue;
   width: 276px;
   max-height: 94px;
-  padding: 19px 0 35px 0;
+  padding: 12px 0 0 0;
 
   &--empty {
     display: none;
@@ -66,14 +66,14 @@
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 24px;
     color: $white;
     background-color: $pink;
     position: absolute;
-    top: 9px;
+    top: 17px;
     left: -27px;
     width: 103px;
-    height: 30px;
+    height: 24px;
     transform: rotate(-45deg);
   }
 }
@@ -82,8 +82,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  margin: 0;
-  margin-top: 15px;
+  margin: -3px 0 29px 0;
 }
 
 .price__table-option {
@@ -94,7 +93,7 @@
   color: $darkblue;
   border: 2px $darkgrey solid;
   background-color: $white;
-  padding: 19px 17px 19px 20px;
+  padding: 12px 17px 16px 20px;
 
   &--name {
     display: none;
@@ -118,9 +117,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .price::before {
+    height: 58px;
+    clip-path: polygon(0 0, 100% 0%, 100% 30%, 0 100%);
+  }
+
   .price__wrapper {
     width: $tablet-wrapper;
-    padding: 100px 20px 70px 20px;
+    padding: 110px 20px 67px 20px;
   }
 
   .price__list {
@@ -129,25 +133,30 @@
   }
 
   .price__table-tariff {
-    padding: 19px 0 16px 0;
-    max-width: 152px;
+    padding: 12px 0 16px 0;
+    max-width: 154px;
 
     &--empty {
       display: table-cell;
     }
 
     &--hit::after {
-      top: 14px;
-      left: -22px;
+      top: 15px;
+      left: -23px;
       width: 87px;
       height: 19px;
       line-height: 19px;
     }
   }
 
+  .price__table-price {
+    margin: -3px 0 -7px 0;
+  }
+
   .price__table-option {
     text-transform: none;
     max-width: 152px;
+    padding: 7px 17px 8px 20px;
 
     &--name {
       display: table-cell;
@@ -174,9 +183,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .price::before {
+    height: 75px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+  }
+
   .price__wrapper {
     width: $desktop-wrapper;
-    padding: 159px 20px 98px 20px;
+    padding: 145px 20px 95px 20px;
   }
 
   .price__list {
@@ -186,9 +200,10 @@
   .price__table-tariff {
     max-width: 233px;
     font-size: 18px;
+    padding: 17px 0 30px 0;
 
     &--hit::after {
-      top: 16px;
+      top: 18px;
       left: -24px;
       width: 104px;
       height: 24px;
@@ -202,6 +217,7 @@
 
   .price__table-option {
     max-width: 233px;
+    padding: 13px 17px 16px 20px;
 
     &--name {
       font-size: 18px;

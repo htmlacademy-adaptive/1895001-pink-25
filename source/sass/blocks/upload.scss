@@ -2,6 +2,7 @@
 
 .upload {
   background-color: $lightgrey;
+  margin-bottom: 6px;
 }
 
 .upload__wrapper {
@@ -14,7 +15,7 @@
 
 .upload__title {
   margin: 0;
-  padding: 0 20px 52px 20px;
+  padding: 0 20px 41px 20px;
   background-color: $white;
   color: $darkblue;
   font-weight: 400;
@@ -24,7 +25,7 @@
 }
 
 .upload__image {
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 }
 
 .upload__form {
@@ -39,8 +40,8 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 35px;
-  margin-bottom: 34px;
+  gap: 30px;
+  margin-bottom: 27px;
 }
 
 .upload__tool {
@@ -85,7 +86,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 66px;
+  margin-bottom: 56px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -96,6 +97,17 @@
   display: none;
   width: 240px;
   margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 200%;
+    background-color: rgba($darkblue, 0.1);
+    top: 48px;
+    left: -200px;
+  }
 
   &--active {
     display: block;
@@ -185,9 +197,22 @@ input[type="range"].upload__input::-moz-range-thumb:active {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.upload__br {
+  display: none;
+
+  &--mobile {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .upload {
+    margin-bottom: 0;
+  }
+
   .upload__title {
     font-size: 18px;
+    padding-bottom: 70px;
   }
 
   .upload__wrapper {
@@ -204,6 +229,7 @@ input[type="range"].upload__input::-moz-range-thumb:active {
 
   .upload__form {
     width: 260px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -211,8 +237,8 @@ input[type="range"].upload__input::-moz-range-thumb:active {
 
   .upload__form-wrapper {
     display: flex;
-    gap: 28px;
-    min-height: 190px;
+    gap: 20px;
+    min-height: 170px;
   }
 
   .upload__tools {
@@ -252,16 +278,30 @@ input[type="range"].upload__input::-moz-range-thumb:active {
     justify-content: space-between;
   }
 
+  .upload__send {
+    margin-bottom: 23px;
+  }
+
   .upload__setting-item {
     display: block;
     width: 202px;
+
+    &::after {
+      width: 275px;
+      left: -53px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .upload {
     margin: 0 auto;
+    margin-bottom: 28px;
     background: none;
+  }
+
+  .upload__title {
+    padding-bottom: 67px;
   }
 
   .upload__wrapper {
@@ -269,14 +309,21 @@ input[type="range"].upload__input::-moz-range-thumb:active {
     padding: 57px 60px 57px 80px;
     background-color: $lightgrey;
     box-sizing: border-box;
+    gap: normal;
+    justify-content: space-between;
   }
 
   .upload__form {
     width: 410px;
+    padding: 0;
   }
 
   .upload__form-wrapper {
-    gap: 44px;
+    gap: 42px;
+  }
+
+  .upload__tools {
+    gap: 27px;
   }
 
   .upload__tool {
@@ -301,9 +348,20 @@ input[type="range"].upload__input::-moz-range-thumb:active {
     }
   }
 
+  .upload__settings {
+    padding-top: 7px;
+    gap: 42px;
+    justify-content: flex-start;
+  }
+
   .upload__setting-item {
     width: 288px;
     margin: 0;
+
+    &::after {
+      width: 410px;
+      left: -90px;
+    }
   }
 
   .upload__buttons {

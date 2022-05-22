@@ -12,9 +12,15 @@
   align-items: center;
 }
 
+.research__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .research__title {
   margin: 0;
-  margin-bottom: 24px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -23,7 +29,6 @@
 
 .research__description {
   margin: 0;
-  margin-bottom: 24px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -39,6 +44,10 @@
 
 .research__image {
   display: block;
+}
+
+.research__br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,6 +66,11 @@
 
   .research__inner {
     max-width: 310px;
+    padding-top: 17px;
+  }
+
+  .research__br--tablet {
+    display: block;
   }
 }
 
@@ -68,26 +82,38 @@
 
   .research__wrapper {
     width: $desktop-wrapper;
-    padding: 17px 20px 67px 20px;
+    padding: 8px 20px 67px 20px;
   }
 
   .research__inner {
     max-width: 540px;
+    padding-top: 44px;
+    gap: 30px;
   }
 
   .research__title {
     line-height: 30px;
-    margin-bottom: 37px;
+    margin-bottom: 0;
   }
 
   .research__description {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 47px;
+    margin-bottom: 0;
   }
 
   .research__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .research__br {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

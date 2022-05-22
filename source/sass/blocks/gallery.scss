@@ -2,7 +2,7 @@
 
 .gallery__wrapper {
   margin: 0 auto;
-  padding: 54px 0 49px 0;
+  padding: 44px 0 44px 0;
 }
 
 .gallery__title {
@@ -12,7 +12,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -50,7 +50,7 @@
 
 .gallery__description {
   background-color: $lightgrey;
-  padding: 25px 10px 25px 17px;
+  padding: 18px 10px 18px 17px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 11px;
 }
 
 .gallery__like-button {
@@ -117,9 +117,17 @@
   gap: 20px;
 }
 
+.gallery__br {
+  display: none;
+
+  &--mobile {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .gallery__wrapper {
-    padding: 100px 0 73px 0;
+    padding: 90px 0 64px 0;
   }
 
   .gallery__photo-wrapper--panorama::before {
@@ -129,15 +137,15 @@
   .gallery__title {
     width: $tablet-wrapper;
     font-size: 18px;
-    margin-bottom: 85px;
+    margin-bottom: 78px;
   }
 
   .gallery__description {
     min-height: 155px;
-    padding: 30px;
+    padding: 22px 30px 23px 30px;
 
     &--panorama {
-      padding: 30px 30px 32px 30px;
+      padding: 23px 30px 25px 30px;
       min-height: 121px;
       width: $tablet-wrapper;
       flex-direction: row;
@@ -179,11 +187,25 @@
   .gallery__item {
     width: 300px;
   }
+
+  .gallery__br {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__wrapper {
-    padding: 100px 0 67px 0;
+    padding: 91px 0 57px 0;
+  }
+
+  .gallery__title {
+    margin-bottom: 89px;
   }
 
   .gallery__photo-wrapper--panorama::before {
@@ -191,12 +213,34 @@
     right: 130px;
   }
 
-  .gallery__description--panorama {
-    width: $desktop-wrapper;
+  .gallery__description {
+    padding: 23px 31px 23px 27px;
+
+    &--panorama {
+      width: $desktop-wrapper;
+      min-height: 95px;
+      padding: 24px 30px 24px 27px;
+    }
+  }
+
+  .gallery__like-button {
+    margin: 0;
+    margin-top: auto;
   }
 
   .gallery__list {
     width: $desktop-wrapper;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 54px 20px;
+  }
+
+  .gallery__br {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

@@ -20,18 +20,18 @@
 
 .intro__wrapper {
   margin: 0 auto;
-  padding: 102px 20px 84px 20px;
+  padding: 94px 20px 77px 20px;
   position: relative;
   display: flex;
   flex-direction: column;
   z-index: 0;
 
   &--index {
-    padding: 95px 0 0 0;
+    padding: 89px 0 0 0;
   }
 
   &--form {
-    padding: 102px 20px 51px 20px;
+    padding: 94px 20px 44px 20px;
   }
 }
 
@@ -47,7 +47,7 @@
 
   &--index {
     line-height: 29px;
-    margin-bottom: 23px;
+    margin-bottom: 29px;
   }
 }
 
@@ -65,7 +65,7 @@
 }
 
 .intro__download-list {
-  margin: 32px 0 28px 0;
+  margin: 32px 0 21px 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -100,7 +100,7 @@
 
 .intro__wrapper-description {
   text-align: center;
-  padding: 28px 20px 38px 20px;
+  padding: 27px 20px 31px 20px;
   width: 280px;
   margin: 0 auto;
 }
@@ -134,20 +134,20 @@
 
   .intro__wrapper {
     width: $tablet-wrapper;
-    padding: 191px 20px 143px 20px;
+    padding: 176px 20px 128px 20px;
 
     &--index {
-      padding: 184px 20px 119px 20px;
+      padding: 204px 20px 114px 20px;
     }
 
     &--form {
-      padding: 191px 20px 74px 20px;
+      padding: 177px 20px 59px 20px;
     }
 
     &--index .intro__title {
-      width: 300px;
+      width: 285px;
       padding: 0 20px;
-      margin: 0 0 39px 0;
+      margin: 0 0 29px 8px;
       box-sizing: border-box;
       font-size: 40px;
       line-height: 48px;
@@ -162,7 +162,7 @@
   }
 
   .intro__download-list {
-    margin: 46px 0 38px 0;
+    margin: 46px 0 32px 0;
   }
 
   .intro__image {
@@ -190,16 +190,31 @@
 
   .intro__wrapper {
     width: $desktop-wrapper;
-    padding: 184px 20px 104px 20px;
+    padding: 169px 20px 89px 20px;
 
     &--index {
-      padding: 208px 20px 117px 20px;
+      width: 100%;
+      padding: 209px 20px 125px 20px;
+      box-sizing: border-box;
     }
 
     &--index .intro__title {
       font-size: 50px;
       line-height: 68px;
+      margin: 0 0 36px 118px;
     }
+
+    &--form .intro__title {
+      width: 750px;
+    }
+  }
+
+  .intro__wrapper-description {
+    margin-left: 110px;
+  }
+
+  .intro__image {
+    right: 4px;
   }
 
   .intro__download-button {
@@ -207,6 +222,6 @@
   }
 
   .intro__download-list {
-    margin: 67px 0 58px 0;
+    margin: 67px 0 52px 0;
   }
 }
