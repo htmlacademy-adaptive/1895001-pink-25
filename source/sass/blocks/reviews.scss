@@ -1,7 +1,7 @@
 @use "../global/index.scss" as *;
 
 .reviews {
-  margin-top: -50px;
+  margin-top: -53px;
   position: relative;
   z-index: 2;
   background-color: $white;
@@ -9,16 +9,16 @@
 
 .reviews__wrapper {
   width: $mobile-wrapper;
-  padding: 50px 20px 16px;
+  padding: 41px 20px 16px;
   margin: 0 auto;
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 31px;
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 11px;
   text-align: center;
 }
 
@@ -62,13 +62,13 @@
 
   .reviews__wrapper {
     width: $tablet-wrapper;
-    padding: 109px 20px 0 20px;
+    padding: 99px 20px 0 20px;
   }
 
   .reviews__item {
     flex-direction: column-reverse;
-    gap: 51px;
-    margin-bottom: 49px;
+    gap: 36px;
+    margin-bottom: 33px;
   }
 
   .reviews__author-name {
@@ -88,7 +88,7 @@
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
     width: $desktop-wrapper;
-    padding: 58px 20px 41px 20px;
+    padding: 49px 20px 41px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,6 +107,7 @@
 
   .reviews__list {
     max-width: 690px;
+    margin: 0 auto;
   }
 
   .reviews__item {
@@ -123,6 +124,8 @@
   }
 
   .reviews__button {
+    position: relative;
+    top: 17px;
     display: block;
     width: 22px;
     height: 41px;

@@ -27,8 +27,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    margin-top: 5px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .copyright__text {
     font-size: 18px;
+  }
+
+  .copyright__link {
+    margin-top: 8px;
   }
 }

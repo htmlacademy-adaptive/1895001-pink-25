@@ -46,7 +46,7 @@
   }
 
   .main-header__logo-image {
-    height: 110px;
+    height: 95px;
 
     &--mobile {
       display: none;
@@ -61,6 +61,7 @@
 @media (min-width: $desktop-width) {
   .main-header__wrapper {
     width: $desktop-wrapper;
+    padding: 0;
   }
 
   .main-header__logo-image {

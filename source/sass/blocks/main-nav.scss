@@ -162,7 +162,7 @@
 
   .main-nav__list {
     position: static;
-    width: 620px;
+    width: 700px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -186,11 +186,15 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 34px;
         left: 0;
         height: 2px;
-        background: $pink;
+        background: $white;
       }
+    }
+
+    &:hover::after {
+      background: $pink;
     }
   }
 

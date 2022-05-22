@@ -3,6 +3,7 @@
 .main-form__wrapper {
   min-width: 320px;
   margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .main-form__title {
@@ -10,22 +11,39 @@
   font-size: 14px;
   line-height: 30px;
   color: $darkblue;
-  margin: 55px auto;
+  margin: 44px auto 36px;
   padding: 0 20px;
   width: $mobile-wrapper;
   text-align: center;
 }
 
+.main-form__hidden {
+  display: none;
+}
+
+.main-form__br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-form__wrapper {
     min-width: $tablet-wrapper;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 
   .main-form__title {
     width: $tablet-wrapper;
-    margin: 55px auto;
+    margin: 91px auto 72px;
+    font-size: 18px;
     padding: 0 20px;
+  }
+
+  .main-form__hidden {
+    display: inline;
+  }
+
+  .main-form__br--tablet {
+    display: block;
   }
 }
 
@@ -33,11 +51,22 @@
   .main-form__wrapper {
     min-width: $desktop-width;
     padding: 0;
+    margin: 0;
   }
 
   .main-form__title {
     width: $desktop-wrapper;
-    margin: 100px auto 82px auto;
+    margin: 91px auto 79px auto;
     padding: 0 20px;
+  }
+
+  .main-form__br {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop{
+      display: block;
+    }
   }
 }
