@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -59,6 +59,9 @@
           <h2 class="visually-hidden">Скачайте наше приложение</h2>
           <p class="intro__title intro__title--index">Взгляните на жизнь иначе!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/hands/hand-desktop.webp 1x, img/hands/hand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/hands/hand-tablet.webp 1x, img/hands/hand-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/hands/hand-mobile.webp 1x, img/hands/hand-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/hands/hand-desktop.png 1x, img/hands/hand-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/hands/hand-tablet.png 1x, img/hands/hand-tablet@2x.png 2x">
             <img class="intro__image" src="img/hands/hand-mobile.png" srcset="img/hands/hand-mobile@2x.png 2x" alt="Телефон.">
@@ -99,21 +102,30 @@
           <div class="advantages__container-list">
             <ul class="advantages__list">
               <li class="advantages__item">
-                <img class="advantages__item-image" src="img/advantages/iphone-1.png" srcset="img/advantages/iphone-1@2x.png 2x" alt="Серые будни.">
+                <picture>
+                  <source type="image/webp" srcset="img/advantages/iphone-1.webp 1x, img/advantages/iphone-1@2x.webp 2x">
+                  <img class="advantages__item-image" src="img/advantages/iphone-1.png" srcset="img/advantages/iphone-1@2x.png 2x" alt="Серые будни.">
+                </picture>
                 <div class="advantages__text">
                   <p class="advantages__item-title">Поднимает настроение</p>
                   <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </div>
               </li>
               <li class="advantages__item">
-                <img class="advantages__item-image" src="img/advantages/iphone-2.png" srcset="img/advantages/iphone-2@2x.png 2x" alt="Розовый цвет.">
+                <picture>
+                  <source type="image/webp" srcset="img/advantages/iphone-2.webp 1x, img/advantages/iphone-2@2x.webp 2x">
+                  <img class="advantages__item-image" src="img/advantages/iphone-2.png" srcset="img/advantages/iphone-2@2x.png 2x" alt="Розовый цвет.">
+                </picture>
                 <div class="advantages__text">
                   <p class="advantages__item-title">Меняет мир вокруг</p>
                   <p class="advantages__description">Сделайте снимок и <br class="advantages__br advantages__br--desktop"> украсьте его смайликом <br class="advantages__br advantages__br--desktop"> или текстовой подписью, чтобы <br class="advantages__br advantages__br--tablet"> усилить эффект</p>
                 </div>
               </li>
               <li class="advantages__item">
-                <img class="advantages__item-image" src="img/advantages/iphone-3.png" srcset="img/advantages/iphone-3@2x.png 2x" alt="Телефон со смайликом.">
+                <picture>
+                  <source type="image/webp" srcset="img/advantages/iphone-3.webp 1x, img/advantages/iphone-3@2x.webp 2x">
+                  <img class="advantages__item-image" src="img/advantages/iphone-3.png" srcset="img/advantages/iphone-3@2x.png 2x" alt="Телефон со смайликом.">
+                </picture>
                 <div class="advantages__text">
                   <p class="advantages__item-title">Заводит <br class="advantages__br advantages__br--desktop"> новых друзей</p>
                   <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями <br class="advantages__br advantages__br--desktop"> и заводите новых</p>
@@ -121,6 +133,8 @@
               </li>
             </ul>
             <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/advantages/iphone-tablet.webp 1x, img/advantages/iphone-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/advantages/iphone-mobile.webp 1x, img/advantages/iphone-mobile@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="img/advantages/iphone-tablet.png 1x, img/advantages/iphone-tablet@2x.png 2x">
               <img class="advantages__image" src="img/advantages/iphone-mobile.png" srcset="img/advantages/iphone-mobile@2x.png 2x" alt="Телефон со смайликом.">
             </picture>
@@ -133,6 +147,8 @@
 
         <div class="research__wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/timer-desktop.webp 1x, img/timer-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/timer-tablet.webp 1x, img/timer-tablet@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/timer-desktop.png 1x, img/timer-desktop@2x.png 2x">
             <img class="research__image" src="img/timer-tablet.png" srcset="img/timer-tablet@2x.png 2x" alt="Эффект на 24 часа.">
           </picture>
