@@ -39,10 +39,10 @@
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba($pink, 0.3);
+  background-color: transparentize($pink, 0.7);
   box-shadow:
-    0 10px 0 0 rgba($pink, 0.3),
-    0 20px 0 0 rgba($pink, 0.3);
+    0 10px 0 0 transparentize($pink, 0.7),
+    0 20px 0 0 transparentize($pink, 0.7);
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -79,7 +79,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: rgba($pink, 0.3);
+    background-color: transparentize($pink, 0.7);
   }
 }
 
@@ -109,7 +109,7 @@
   background-color: $darkblue;
   box-shadow:
     0 1px 0 $black,
-    inset 0 1px 0 rgba($white, 0.15);
+    inset 0 1px 0 transparentize($white, 0.85);
   border-top: 1px solid #000000;
   width: 100%;
 }
@@ -225,7 +225,7 @@
     }
 
     &:active {
-      color: rgba($white, 0.3);
+      color: transparentize($white, 0.7);
     }
   }
 

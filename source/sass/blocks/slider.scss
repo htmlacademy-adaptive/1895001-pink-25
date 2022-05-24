@@ -19,7 +19,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: rgba($darkblue, 0.3);
+  background-color: transparentize($darkblue, 0.7);
   cursor: pointer;
 
   &--current {

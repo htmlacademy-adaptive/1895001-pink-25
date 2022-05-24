@@ -75,7 +75,7 @@
 }
 
 .upload__tool-item svg {
-  fill: rgba($darkblue, 0.3);
+  fill: transparentize($darkblue, 0.7);
 }
 
 .upload__tool--active svg {
@@ -104,7 +104,7 @@
     position: absolute;
     height: 1px;
     width: 200%;
-    background-color: rgba($darkblue, 0.1);
+    background-color: transparentize($darkblue, 0.9);
     top: 48px;
     left: -200px;
   }
@@ -186,12 +186,12 @@ input[type="range"].upload__input::-moz-range-thumb:active {
 }
 
 .upload__cancel {
-  color: rgba($darkblue, 0.1);
+  color: transparentize($darkblue, 0.9);
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   background-color: transparent;
-  border: 3px solid rgba($darkblue, 0.1);
+  border: 3px solid transparentize($darkblue, 0.9);
   border-radius: 30px;
   padding: 16px 0;
   font-family: "Open Sans", "Arial", sans-serif;
