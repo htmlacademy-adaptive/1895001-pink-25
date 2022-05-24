@@ -194,6 +194,7 @@
 
     &--index {
       width: 100%;
+      max-width: $desktop-width;
       padding: 209px 20px 125px 20px;
       box-sizing: border-box;
     }
