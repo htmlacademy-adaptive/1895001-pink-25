@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -64,7 +67,7 @@
             <source type="image/webp" srcset="img/hands/hand-mobile.webp 1x, img/hands/hand-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/hands/hand-desktop.png 1x, img/hands/hand-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/hands/hand-tablet.png 1x, img/hands/hand-tablet@2x.png 2x">
-            <img class="intro__image" src="img/hands/hand-mobile.png" srcset="img/hands/hand-mobile@2x.png 2x" alt="Телефон.">
+            <img class="intro__image" loading="lazy" src="img/hands/hand-mobile.png" srcset="img/hands/hand-mobile@2x.png 2x" alt="Телефон.">
           </picture>
           <div class="intro__wrapper-description">
             <a class="intro__download-button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
@@ -104,7 +107,7 @@
               <li class="advantages__item">
                 <picture>
                   <source type="image/webp" srcset="img/advantages/iphone-1.webp 1x, img/advantages/iphone-1@2x.webp 2x">
-                  <img class="advantages__item-image" src="img/advantages/iphone-1.png" srcset="img/advantages/iphone-1@2x.png 2x" alt="Серые будни.">
+                  <img class="advantages__item-image" loading="lazy" src="img/advantages/iphone-1.png" srcset="img/advantages/iphone-1@2x.png 2x" alt="Серые будни.">
                 </picture>
                 <div class="advantages__text">
                   <p class="advantages__item-title">Поднимает настроение</p>
@@ -114,7 +117,7 @@
               <li class="advantages__item">
                 <picture>
                   <source type="image/webp" srcset="img/advantages/iphone-2.webp 1x, img/advantages/iphone-2@2x.webp 2x">
-                  <img class="advantages__item-image" src="img/advantages/iphone-2.png" srcset="img/advantages/iphone-2@2x.png 2x" alt="Розовый цвет.">
+                  <img class="advantages__item-image" loading="lazy" src="img/advantages/iphone-2.png" srcset="img/advantages/iphone-2@2x.png 2x" alt="Розовый цвет.">
                 </picture>
                 <div class="advantages__text">
                   <p class="advantages__item-title">Меняет мир вокруг</p>
@@ -124,7 +127,7 @@
               <li class="advantages__item">
                 <picture>
                   <source type="image/webp" srcset="img/advantages/iphone-3.webp 1x, img/advantages/iphone-3@2x.webp 2x">
-                  <img class="advantages__item-image" src="img/advantages/iphone-3.png" srcset="img/advantages/iphone-3@2x.png 2x" alt="Телефон со смайликом.">
+                  <img class="advantages__item-image" loading="lazy" src="img/advantages/iphone-3.png" srcset="img/advantages/iphone-3@2x.png 2x" alt="Телефон со смайликом.">
                 </picture>
                 <div class="advantages__text">
                   <p class="advantages__item-title">Заводит <br class="advantages__br advantages__br--desktop"> новых друзей</p>
@@ -136,7 +139,7 @@
               <source type="image/webp" media="(min-width: 660px)" srcset="img/advantages/iphone-tablet.webp 1x, img/advantages/iphone-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/advantages/iphone-mobile.webp 1x, img/advantages/iphone-mobile@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="img/advantages/iphone-tablet.png 1x, img/advantages/iphone-tablet@2x.png 2x">
-              <img class="advantages__image" src="img/advantages/iphone-mobile.png" srcset="img/advantages/iphone-mobile@2x.png 2x" alt="Телефон со смайликом.">
+              <img class="advantages__image" loading="lazy" src="img/advantages/iphone-mobile.png" srcset="img/advantages/iphone-mobile@2x.png 2x" alt="Телефон со смайликом.">
             </picture>
           </div>
         </div>
@@ -150,7 +153,7 @@
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/timer-desktop.webp 1x, img/timer-desktop@2x.webp 2x">
             <source type="image/webp" srcset="img/timer-tablet.webp 1x, img/timer-tablet@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/timer-desktop.png 1x, img/timer-desktop@2x.png 2x">
-            <img class="research__image" src="img/timer-tablet.png" srcset="img/timer-tablet@2x.png 2x" alt="Эффект на 24 часа.">
+            <img class="research__image" loading="lazy" src="img/timer-tablet.png" srcset="img/timer-tablet@2x.png 2x" alt="Эффект на 24 часа.">
           </picture>
           <div class="research__inner">
             <h2 class="research__title">Эффект <br class="research__br research__br--tablet"> на 24 часа!</h2>

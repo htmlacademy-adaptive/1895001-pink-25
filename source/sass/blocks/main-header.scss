@@ -1,7 +1,7 @@
 @use "../global/index.scss" as *;
 
 .main-header {
-  background: rgba($black, 0.3);
+  background: transparentize($black, 0.7);
   z-index: 2;
 }
 
@@ -10,7 +10,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  min-height: 66px;
   position: relative;
   box-sizing: border-box;
 }
@@ -18,7 +18,8 @@
 .main-header__logo {
   height: 66px;
   z-index: 11;
-  position: relative;
+  position: absolute;
+  left: 20px;
 }
 
 .main-header__logo-image {
@@ -41,6 +42,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    min-height: 110px;
+  }
+
   .main-header__logo {
     height: 110px;
   }
@@ -63,6 +68,10 @@
   .main-header__wrapper {
     width: $desktop-wrapper;
     padding: 0;
+  }
+
+  .main-header__logo {
+    position: static;
   }
 
   .main-header__logo-image {

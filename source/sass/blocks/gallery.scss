@@ -48,6 +48,10 @@
   }
 }
 
+.gallery__photo-wrapper a {
+  text-decoration: none;
+}
+
 .gallery__description {
   background-color: $lightgrey;
   padding: 18px 10px 18px 17px;
