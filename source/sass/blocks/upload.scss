@@ -183,6 +183,17 @@ input[type="range"].upload__input::-moz-range-thumb:active {
   margin-bottom: 12px;
   padding: 16px 0;
   font-family: "Open Sans", "Arial", sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $pink;
+    color: transparentize($white, 0.7);
+  }
 }
 
 .upload__cancel {
@@ -195,6 +206,18 @@ input[type="range"].upload__input::-moz-range-thumb:active {
   border-radius: 30px;
   padding: 16px 0;
   font-family: "Open Sans", "Arial", sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    border-color: transparentize($darkblue, 0.7);
+    color: transparentize($darkblue, 0.7);
+  }
+
+  &:active {
+    background-color: transparentize($darkblue, 0.7);
+    border: none;
+    color: transparentize($white, 0.7);
+  }
 }
 
 .upload__br {
@@ -268,6 +291,14 @@ input[type="range"].upload__input::-moz-range-thumb:active {
     &--contrast svg {
       width: 16px;
       height: 16px;
+      fill: $pink;
+    }
+
+    &:hover svg {
+      fill: transparentize($darkblue, 0.5);
+    }
+
+    &:active svg {
       fill: $pink;
     }
   }

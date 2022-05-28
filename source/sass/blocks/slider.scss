@@ -28,4 +28,12 @@
     background-color: $white;
     border: 3px solid $darkblue;
   }
+
+  &:hover {
+    background-color: transparentize($darkblue, 0.4);
+  }
+
+  &:active {
+    background-color: transparentize($darkblue, 0.9);
+  }
 }
