@@ -27,6 +27,20 @@
   flex-direction: column;
 }
 
+.contacts__item a {
+  text-decoration: none;
+
+  &:hover {
+    color: $darkblue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: transparentize($darkblue, 0.7);
+    text-decoration: none;
+  }
+}
+
 .contacts__subtitle {
   color: $darkblue;
   font-weight: 700;

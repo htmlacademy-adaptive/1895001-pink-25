@@ -63,6 +63,22 @@
   &--failure {
     margin-top: 6px;
   }
+
+  &:hover {
+    background-color: $button-hover;
+    border-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-hover;
+    border-color: $button-hover;
+    color: transparentize($white, 0.7);
+  }
+
+  &:disabled {
+    background-color: $darkgrey;
+    border-color: $darkgrey;
+  }
 }
 
 .modal__inner {

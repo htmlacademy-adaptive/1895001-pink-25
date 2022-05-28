@@ -57,6 +57,16 @@
   &--app {
     margin-bottom: 43px;
   }
+
+  &:hover .contest-form__radio-mark,
+  &:hover .contest-form__checkbox-mark {
+    border-color: $darkblue;
+  }
+
+  &:active .contest-form__radio-mark,
+  &:active .contest-form__checkbox-mark {
+    border-color: $pink;
+  }
 }
 
 .contest-form__checkbox {
@@ -87,6 +97,7 @@
   flex-direction: column;
   list-style-type: none;
   gap: 17px;
+  flex-wrap: wrap;
 }
 
 .contest-form__connect-item {
@@ -147,11 +158,25 @@
   font-size: 18px;
   line-height: 30px;
   border: 2px $darkgrey solid;
+  border-radius: 1px;
   padding: 15px 20px;
   font-family: "Open Sans", "Arial", sans-serif;
 
   &::placeholder {
     color: $darkblue;
+  }
+
+  &:hover {
+    border-color: $darkblue;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: $pink;
   }
 }
 
@@ -219,6 +244,19 @@
   &::placeholder {
     color: $darkblue;
   }
+
+  &:hover {
+    border-color: $darkblue;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: $pink;
+  }
 }
 
 .contest-form__buttons {
@@ -244,6 +282,22 @@
   cursor: pointer;
   padding: 14px 0;
   font-family: "Open Sans", "Arial", sans-serif;
+
+  &:hover {
+    background-color: $button-hover;
+    border-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-hover;
+    border-color: $button-hover;
+    color: transparentize($white, 0.7);
+  }
+
+  &:disabled {
+    background-color: $darkgrey;
+    border-color: $darkgrey;
+  }
 }
 
 .contest-form__note {
